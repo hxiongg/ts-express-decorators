@@ -20,6 +20,10 @@ export abstract class EntityDescription {
    * Type of the entity.
    */
   @NotEnumerable() protected _type: Type<any>;
+  /**
+   *
+   */
+  @NotEnumerable() protected _types: (Type<any> | string)[];
 
   /**
    * Index of the entity. Only used when the entity describe a parameters.
@@ -87,6 +91,22 @@ export abstract class EntityDescription {
    */
   get type(): Type<any> {
     return this._type;
+  }
+
+  /**
+   *
+   * @param value
+   */
+  set types(value: (Type<any> | string)[]) {
+    this._types = value || Object;
+  }
+
+  /**
+   *
+   * @returns {Type<any>}
+   */
+  get types(): (Type<any> | string)[] {
+    return this._types;
   }
 
   /**

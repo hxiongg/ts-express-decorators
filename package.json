@@ -18,7 +18,8 @@
     "publish:release": "gulp publish:packages",
     "doc:serve": "gulp build:doc && docsify serve ./docs --port 3001",
     "doc:build": "gulp build:doc",
-    "prettier": "prettier '{src,test}/**/*.ts' --write"
+    "prettier": "prettier '{src,test}/**/*.ts' --write",
+    "start:db": "mongod --dbpath ./.tmp"
   },
   "repository": {
     "type": "git",

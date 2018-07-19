@@ -1,12 +1,13 @@
 import "@tsed/ajv";
 import {ProviderScope, ServerLoader, ServerSettings} from "@tsed/common";
+import "@tsed/mongoose";
 import "@tsed/socketio";
 import "@tsed/swagger";
-import "@tsed/mongoose";
 import * as Path from "path";
 import {$log} from "ts-log-debug";
 import {ErrorsCtrl} from "./controllers/errors/ErrorsCtrl";
 import {SocketPageCtrl} from "./controllers/pages/SocketPageCtrl";
+import {ProductsCtrl} from "./controllers/products/ProductsCtrl";
 
 import {RestCtrl} from "./controllers/RestCtrl";
 import TestAcceptMimeMiddleware from "./middlewares/acceptmime";
@@ -24,7 +25,7 @@ const spec = require(`${rootDir}/spec/swagger.default.json`);
   },
   mount: {
     "/": [SocketPageCtrl],
-    "/rest": ["${rootDir}/controllers/Base/**.js", "${rootDir}/controllers/calendars/**.ts", ErrorsCtrl, RestCtrl],
+    "/rest": ["${rootDir}/controllers/Base/**.js", "${rootDir}/controllers/calendars/**.ts", ErrorsCtrl, RestCtrl, ProductsCtrl],
     "/rest/v1": "${rootDir}/controllers/{calendars,users}/**.ts"
   },
 
@@ -34,6 +35,10 @@ const spec = require(`${rootDir}/spec/swagger.default.json`);
 
   serveStatic: {
     "/": "${rootDir}/views"
+  },
+
+  mongoose: {
+    url: "mongodb://127.0.0.1:27017/test"
   },
 
   swagger: [

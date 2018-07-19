@@ -3,6 +3,7 @@ import {Property} from "../../src/common/jsonschema/decorators/jsonProperty";
 import {MinLength} from "../../src/common/jsonschema/decorators/minLength";
 import {PropertyName} from "../../src/common/jsonschema/decorators/propertyName";
 import {PropertyType} from "../../src/common/jsonschema/decorators/propertyType";
+import {PropertyTypes} from "../../src/common/jsonschema/decorators/propertyTypes";
 import {Required} from "../../src/common/mvc/decorators";
 
 export class JsonBaseModel {
@@ -81,6 +82,15 @@ export class JsonFoo2 {
   @Property() ageModel: JsonAgeModel;
 
   @IgnoreProperty() password: string;
+
+  @PropertyTypes(Boolean, JsonFoo)
+  types: boolean | JsonFoo;
+
+  @PropertyTypes(Boolean, JsonFoo)
+  typesArray: (boolean | JsonFoo)[];
+
+  @PropertyTypes(Boolean, JsonFoo)
+  typesMap: Map<string, boolean | JsonFoo>;
 
   method() {}
 }
