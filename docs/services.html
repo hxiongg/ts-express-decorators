@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Services | Ts.ED</title>
+    <meta name="description" content="A TypeScript Framework on top of Express">
+    
+    
+    <link rel="preload" href="/assets/css/0.styles.d99335ca.css" as="style"><link rel="preload" href="/assets/js/app.75f5c317.js" as="script"><link rel="preload" href="/assets/js/28.01844679.js" as="script"><link rel="preload" href="/assets/js/3.6e5450d5.js" as="script"><link rel="prefetch" href="/assets/js/20.e4194ca1.js"><link rel="prefetch" href="/assets/js/2.2d1ca846.js"><link rel="prefetch" href="/assets/js/4.23bec895.js"><link rel="prefetch" href="/assets/js/5.8c756870.js"><link rel="prefetch" href="/assets/js/6.c4afc6f3.js"><link rel="prefetch" href="/assets/js/7.a3e8bae9.js"><link rel="prefetch" href="/assets/js/8.aab31b00.js"><link rel="prefetch" href="/assets/js/9.58ae776d.js"><link rel="prefetch" href="/assets/js/10.264f23fa.js"><link rel="prefetch" href="/assets/js/11.5b6e9cfb.js"><link rel="prefetch" href="/assets/js/12.097901d3.js"><link rel="prefetch" href="/assets/js/13.de2fb880.js"><link rel="prefetch" href="/assets/js/14.f86e7358.js"><link rel="prefetch" href="/assets/js/15.b8ffc915.js"><link rel="prefetch" href="/assets/js/16.6c9d07e6.js"><link rel="prefetch" href="/assets/js/17.2f947caa.js"><link rel="prefetch" href="/assets/js/18.2915a47e.js"><link rel="prefetch" href="/assets/js/19.c5f526e0.js"><link rel="prefetch" href="/assets/js/21.73dc2eda.js"><link rel="prefetch" href="/assets/js/22.8610be1b.js"><link rel="prefetch" href="/assets/js/23.9af27c68.js"><link rel="prefetch" href="/assets/js/24.d8313b57.js"><link rel="prefetch" href="/assets/js/25.a8337b81.js"><link rel="prefetch" href="/assets/js/26.91edff0d.js"><link rel="prefetch" href="/assets/js/27.fd0d16cf.js"><link rel="prefetch" href="/assets/js/29.2f32c0b8.js"><link rel="prefetch" href="/assets/js/30.dd85c693.js"><link rel="prefetch" href="/assets/js/31.db0f7a39.js"><link rel="prefetch" href="/assets/js/32.9d63ca52.js"><link rel="prefetch" href="/assets/js/33.9d8671ef.js"><link rel="prefetch" href="/assets/js/34.3405a98e.js"><link rel="prefetch" href="/assets/js/35.5172e06f.js"><link rel="prefetch" href="/assets/js/36.34894183.js"><link rel="prefetch" href="/assets/js/37.92527245.js"><link rel="prefetch" href="/assets/js/38.e3e7e346.js"><link rel="prefetch" href="/assets/js/39.5065a549.js"><link rel="prefetch" href="/assets/js/40.405813e0.js"><link rel="prefetch" href="/assets/js/41.0762bd94.js"><link rel="prefetch" href="/assets/js/42.37d5a625.js"><link rel="prefetch" href="/assets/js/43.2201fba0.js"><link rel="prefetch" href="/assets/js/44.81996e65.js"><link rel="prefetch" href="/assets/js/45.7308dbbd.js"><link rel="prefetch" href="/assets/js/46.133e72d8.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.d99335ca.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar --fluid"><div class="container"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">
+      Ts.ED
+    </span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <div class="search-box__wrapper"></div> <ul class="suggestions align-right"></ul></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/getting-started.html" class="nav-link">Getting started</a></div><div class="nav-item"><a href="/configuration.html" class="nav-link">Configuration</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title">Guide</span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/tutorials/" class="nav-link">
+          Examples
+        </a></li><li class="dropdown-item"><!----> <a href="/tutorials/passport.html" class="nav-link">
+          Passport.js
+        </a></li><li class="dropdown-item"><!----> <a href="/tutorials/typeorm.html" class="nav-link">
+          TypeORM
+        </a></li><li class="dropdown-item"><!----> <a href="/tutorials/mongoose.html" class="nav-link">
+          Mongoose
+        </a></li><li class="dropdown-item"><!----> <a href="/tutorials/socket-io.html" class="nav-link">
+          Socket.io
+        </a></li><li class="dropdown-item"><!----> <a href="/tutorials/swagger.html" class="nav-link">
+          Swagger
+        </a></li><li class="dropdown-item"><!----> <a href="/tutorials/ajv.html" class="nav-link">
+          Validation with AJV
+        </a></li><li class="dropdown-item"><!----> <a href="/tutorials/upload-files-with-multer.html" class="nav-link">
+          Upload files
+        </a></li><li class="dropdown-item"><!----> <a href="/tutorials/serve-static-files.html" class="nav-link">
+          Serve static files
+        </a></li><li class="dropdown-item"><!----> <a href="/tutorials/templating.html" class="nav-link">
+          Templating
+        </a></li><li class="dropdown-item"><!----> <a href="/tutorials/throw-http-exceptions.html" class="nav-link">
+          Throw HTTP exceptions
+        </a></li><li class="dropdown-item"><!----> <a href="/tutorials/not-found-page.html" class="nav-link">
+          Customize 404
+        </a></li><li class="dropdown-item"><!----> <a href="/tutorials/aws.html" class="nav-link">
+          AWS project
+        </a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title">Documentation</span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/docs/controllers.html" class="nav-link">
+          Controllers
+        </a></li><li class="dropdown-item"><!----> <a href="/docs/services.html" class="nav-link router-link-exact-active router-link-active">
+          Services
+        </a></li><li class="dropdown-item"><!----> <a href="/docs/factory.html" class="nav-link">
+          Factory
+        </a></li><li class="dropdown-item"><!----> <a href="/docs/provider.html" class="nav-link">
+          Provider
+        </a></li><li class="dropdown-item"><!----> <a href="/docs/model.html" class="nav-link">
+          Models
+        </a></li><li class="dropdown-item"><!----> <a href="/docs/converters.html" class="nav-link">
+          Converters
+        </a></li><li class="dropdown-item"><!----> <a href="/docs/middlewares.html" class="nav-link">
+          Middlewares
+        </a></li><li class="dropdown-item"><!----> <a href="/docs/scope.html" class="nav-link">
+          Scope
+        </a></li><li class="dropdown-item"><!----> <a href="/docs/filters.html" class="nav-link">
+          Filters
+        </a></li><li class="dropdown-item"><!----> <a href="/docs/interceptors.html" class="nav-link">
+          Interceptors
+        </a></li><li class="dropdown-item"><!----> <a href="/docs/server-loader.html" class="nav-link">
+          ServerLoader
+        </a></li><li class="dropdown-item"><!----> <a href="/docs/testing.html" class="nav-link">
+          Testing
+        </a></li></ul></div></div><div class="nav-item"><a href="/api.html" class="nav-link">Api Reference</a></div></nav> <div class="links-external"><div class="links-external-item"><a href="https://github.com/romakita/ts-express-decorators" target="_blank" rel="noopener noreferrer" class="repo-link"><svg aria-hidden="true" data-prefix="fab" data-icon="github" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512" data-fa-i2svg class="svg-inline--fa fa-github fa-w-16"><path fill="currentColor" d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"></path></svg></a></div></div></div></div></header> <main class="main-content"><div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/getting-started.html" class="nav-link">Getting started</a></div><div class="nav-item"><a href="/configuration.html" class="nav-link">Configuration</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title">Guide</span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/tutorials/" class="nav-link">
+          Examples
+        </a></li><li class="dropdown-item"><!----> <a href="/tutorials/passport.html" class="nav-link">
+          Passport.js
+        </a></li><li class="dropdown-item"><!----> <a href="/tutorials/typeorm.html" class="nav-link">
+          TypeORM
+        </a></li><li class="dropdown-item"><!----> <a href="/tutorials/mongoose.html" class="nav-link">
+          Mongoose
+        </a></li><li class="dropdown-item"><!----> <a href="/tutorials/socket-io.html" class="nav-link">
+          Socket.io
+        </a></li><li class="dropdown-item"><!----> <a href="/tutorials/swagger.html" class="nav-link">
+          Swagger
+        </a></li><li class="dropdown-item"><!----> <a href="/tutorials/ajv.html" class="nav-link">
+          Validation with AJV
+        </a></li><li class="dropdown-item"><!----> <a href="/tutorials/upload-files-with-multer.html" class="nav-link">
+          Upload files
+        </a></li><li class="dropdown-item"><!----> <a href="/tutorials/serve-static-files.html" class="nav-link">
+          Serve static files
+        </a></li><li class="dropdown-item"><!----> <a href="/tutorials/templating.html" class="nav-link">
+          Templating
+        </a></li><li class="dropdown-item"><!----> <a href="/tutorials/throw-http-exceptions.html" class="nav-link">
+          Throw HTTP exceptions
+        </a></li><li class="dropdown-item"><!----> <a href="/tutorials/not-found-page.html" class="nav-link">
+          Customize 404
+        </a></li><li class="dropdown-item"><!----> <a href="/tutorials/aws.html" class="nav-link">
+          AWS project
+        </a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title">Documentation</span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/docs/controllers.html" class="nav-link">
+          Controllers
+        </a></li><li class="dropdown-item"><!----> <a href="/docs/services.html" class="nav-link router-link-exact-active router-link-active">
+          Services
+        </a></li><li class="dropdown-item"><!----> <a href="/docs/factory.html" class="nav-link">
+          Factory
+        </a></li><li class="dropdown-item"><!----> <a href="/docs/provider.html" class="nav-link">
+          Provider
+        </a></li><li class="dropdown-item"><!----> <a href="/docs/model.html" class="nav-link">
+          Models
+        </a></li><li class="dropdown-item"><!----> <a href="/docs/converters.html" class="nav-link">
+          Converters
+        </a></li><li class="dropdown-item"><!----> <a href="/docs/middlewares.html" class="nav-link">
+          Middlewares
+        </a></li><li class="dropdown-item"><!----> <a href="/docs/scope.html" class="nav-link">
+          Scope
+        </a></li><li class="dropdown-item"><!----> <a href="/docs/filters.html" class="nav-link">
+          Filters
+        </a></li><li class="dropdown-item"><!----> <a href="/docs/interceptors.html" class="nav-link">
+          Interceptors
+        </a></li><li class="dropdown-item"><!----> <a href="/docs/server-loader.html" class="nav-link">
+          ServerLoader
+        </a></li><li class="dropdown-item"><!----> <a href="/docs/testing.html" class="nav-link">
+          Testing
+        </a></li></ul></div></div><div class="nav-item"><a href="/api.html" class="nav-link">Api Reference</a></div></nav>  <ul class="sidebar-links"><li><div class="sidebar-group first"><p class="sidebar-heading open"><span>Documentation</span> <!----></p> <ul class="sidebar-group-items"><li><a href="/docs/controllers.html" class="sidebar-link">Controllers</a></li><li><a href="/docs/services.html" class="active sidebar-link">Services</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/docs/services.html#configuration" class="sidebar-link">Configuration</a></li><li class="sidebar-sub-header"><a href="/docs/services.html#decorators" class="sidebar-link">Decorators</a></li><li class="sidebar-sub-header"><a href="/docs/services.html#declaring-a-service" class="sidebar-link">Declaring a service</a></li><li class="sidebar-sub-header"><a href="/docs/services.html#override-a-service" class="sidebar-link">Override a Service</a></li><li class="sidebar-sub-header"><a href="/docs/services.html#lifecycle-hooks" class="sidebar-link">Lifecycle Hooks</a></li></ul></li><li><a href="/docs/factory.html" class="sidebar-link">Factory</a></li><li><a href="/docs/provider.html" class="sidebar-link">Provider</a></li><li><a href="/docs/model.html" class="sidebar-link">Model</a></li><li><a href="/docs/converters.html" class="sidebar-link">Converters</a></li><li><a href="/docs/middlewares.html" class="sidebar-link">Middlewares</a></li><li><a href="/docs/scope.html" class="sidebar-link">Scope</a></li><li><a href="/docs/filters.html" class="sidebar-link">Filters</a></li><li><a href="/docs/interceptors.html" class="sidebar-link">Interceptors</a></li><li><a href="/docs/server-loader.html" class="sidebar-link">ServerLoader</a></li><li><a href="/docs/testing.html" class="sidebar-link">Testing</a></li></ul></div></li></ul> </aside> <div class="page"><article class="container"> <div class="content"><h1 id="services"><a href="#services" aria-hidden="true" class="header-anchor">#</a> Services</h1> <p>The decorator <code>@Service()</code> declare a new service can be injected in other service or controller on there <code>constructor()</code>.
+All services annotated with <code>@Service()</code> are constructed one time.</p> <h2 id="configuration"><a href="#configuration" aria-hidden="true" class="header-anchor">#</a> Configuration</h2> <p>You must adding the <code>services</code> folder on <code>componentsScan</code> attribute in your server settings as follow :</p> <div class="language-typescript extra-class"><pre class="language-typescript"><code><span class="token keyword">import</span> <span class="token punctuation">{</span>ServerLoader<span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">&quot;@tsed/common&quot;</span><span class="token punctuation">;</span>
+
+@<span class="token function">ServerSettings</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+   rootDir<span class="token punctuation">,</span>
+   mount<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+      <span class="token string">'/rest'</span><span class="token punctuation">:</span> <span class="token template-string"><span class="token string">`./controllers/**/**.js`</span></span>
+   <span class="token punctuation">}</span><span class="token punctuation">,</span>
+   componentsScan<span class="token punctuation">:</span> <span class="token punctuation">[</span>
+       <span class="token template-string"><span class="token string">`./services/**/**.js`</span></span>
+   <span class="token punctuation">]</span><span class="token punctuation">,</span>
+   customServiceOptions<span class="token punctuation">:</span> <span class="token punctuation">{</span><span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+<span class="token keyword">export</span> <span class="token keyword">class</span> <span class="token class-name">Server</span> <span class="token keyword">extends</span> <span class="token class-name">ServerLoader</span> <span class="token punctuation">{</span>
+   
+<span class="token punctuation">}</span>       
+</code></pre></div><h2 id="decorators"><a href="#decorators" aria-hidden="true" class="header-anchor">#</a> Decorators</h2> <ul class="api-list"></ul> <h2 id="declaring-a-service"><a href="#declaring-a-service" aria-hidden="true" class="header-anchor">#</a> Declaring a service</h2> <p>Create a new file in your services folder. Create a new Class definition and add the <code>@Service()</code> annotation on your class.</p> <div class="language-typescript extra-class"><pre class="language-typescript"><code>@<span class="token function">Service</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token keyword">export</span> <span class="token keyword">class</span> <span class="token class-name">MyService</span> <span class="token keyword">implements</span> <span class="token class-name">OnInit</span><span class="token punctuation">,</span> BeforeRoutesInit<span class="token punctuation">,</span> OnRoutesInit<span class="token punctuation">,</span> AfterRoutesInit<span class="token punctuation">,</span> OnServerReady <span class="token punctuation">{</span>
+    <span class="token keyword">private</span> settings <span class="token operator">=</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">;</span>
+    
+    <span class="token keyword">constructor</span><span class="token punctuation">(</span>
+        <span class="token keyword">private</span> serverSettings<span class="token punctuation">:</span> ServerSettingsService
+    <span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">this</span><span class="token punctuation">.</span>settings <span class="token operator">=</span> <span class="token keyword">this</span><span class="token punctuation">.</span>serverSettings<span class="token punctuation">.</span><span class="token keyword">get</span><span class="token punctuation">(</span><span class="token string">'customServiceOptions'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    
+    <span class="token keyword">public</span> <span class="token function">getSettings</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">return</span> <span class="token keyword">this</span><span class="token punctuation">.</span>settings<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>Finally, inject the service to another service:</p> <div class="language-typescript extra-class"><pre class="language-typescript"><code><span class="token keyword">import</span> <span class="token punctuation">{</span>MyService<span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">&quot;./MyService&quot;</span><span class="token punctuation">;</span>
+
+@<span class="token function">Service</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token keyword">export</span> <span class="token keyword">class</span> <span class="token class-name">FooService</span> <span class="token punctuation">{</span>
+    <span class="token keyword">constructor</span><span class="token punctuation">(</span><span class="token keyword">private</span> myService<span class="token punctuation">:</span> myService<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>Or to another controller:</p> <div class="language-typescript extra-class"><pre class="language-typescript"><code><span class="token keyword">import</span> <span class="token punctuation">{</span>MyService<span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">&quot;./MyService&quot;</span><span class="token punctuation">;</span>
+
+@<span class="token function">Controller</span><span class="token punctuation">(</span><span class="token string">'/rest'</span><span class="token punctuation">)</span> 
+<span class="token keyword">class</span> <span class="token class-name">MyController</span> <span class="token punctuation">{</span>
+    <span class="token keyword">constructor</span><span class="token punctuation">(</span><span class="token keyword">private</span> myService<span class="token punctuation">:</span> MyService<span class="token punctuation">)</span><span class="token punctuation">{</span>
+    
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>  
+</code></pre></div><h2 id="override-a-service"><a href="#override-a-service" aria-hidden="true" class="header-anchor">#</a> Override a Service</h2> <p>The decorator <a href="/api/common/di/decorators/OverrideService.html">@OverrideService</a> gives you the ability to
+override some internal Ts.ED service like the <a href="/api/common/filters/services/ParseService.html">ParseService</a>.</p> <p>Example usage:</p> <div class="language-typescript extra-class"><pre class="language-typescript"><code><span class="token keyword">import</span> <span class="token punctuation">{</span>OverrideService<span class="token punctuation">,</span> ParseService<span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">&quot;@tsed/common&quot;</span>
+
+@<span class="token function">OverrideService</span><span class="token punctuation">(</span>ParseService<span class="token punctuation">)</span>
+<span class="token keyword">class</span> <span class="token class-name">CustomParseService</span> <span class="token keyword">extends</span> <span class="token class-name">ParseService</span> <span class="token punctuation">{</span>
+    
+<span class="token punctuation">}</span>
+</code></pre></div><h2 id="lifecycle-hooks"><a href="#lifecycle-hooks" aria-hidden="true" class="header-anchor">#</a> Lifecycle Hooks</h2> <p>Ts.ED 2.x introduce a new Lifecycle Hooks on the service that follows the <a href="/docs/server-loader.html#lifecycle-hooks">Lifecycle of the ServerLoader</a>.
+This lifecycle hooks that provide visibility into these key life moments and the ability to act when they occur.</p> <p>A service that uses one of the phases of the lifecycle can add a number of things and can be completely autonomous.
+This is the case with the example of the socket server (See the section <a href="/tutorials/socket-io.html">How to integrate Socket.io</a>).</p> <p>This schemes resume the order of the service's lifecycle along the ServerLoader's lifecycle.</p> <p><img src="/assets/img/hooks-in-sequence.cbcafb90.png" alt="lifecycle-hooks"></p> <p>Each interface has a single hook method whose name is the interface name prefixed with <code>$</code>. For example, the <code>OnInit</code>
+interface has a hook method named <code>$onInit()</code> (old name <code>$onInjectorReady</code>) or that Ts.ED calls when all services are built.</p> <div class="language-typescript extra-class"><pre class="language-typescript"><code>@<span class="token function">Service</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token keyword">export</span> <span class="token keyword">class</span> <span class="token class-name">MyService</span> <span class="token keyword">implements</span> <span class="token class-name">OnInit</span><span class="token punctuation">,</span> BeforeRoutesInit<span class="token punctuation">,</span> OnRoutesInit<span class="token punctuation">,</span> AfterRoutesInit<span class="token punctuation">,</span> OnServerReady <span class="token punctuation">{</span>
+    <span class="token keyword">private</span> settings <span class="token operator">=</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+    <span class="token keyword">constructor</span><span class="token punctuation">(</span>
+        <span class="token keyword">private</span> serverSettings<span class="token punctuation">:</span> ServerSettingsService
+    <span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">this</span><span class="token punctuation">.</span>settings <span class="token operator">=</span> <span class="token keyword">this</span><span class="token punctuation">.</span>serverSettings<span class="token punctuation">.</span><span class="token keyword">get</span><span class="token punctuation">(</span><span class="token string">'customServiceOptions'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token function">$onInit</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">:</span> Promise<span class="token operator">&lt;</span><span class="token builtin">any</span><span class="token operator">&gt;</span> <span class="token operator">|</span> <span class="token keyword">void</span> <span class="token punctuation">{</span>
+        <span class="token builtin">console</span><span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'All services is ready'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token function">$beforeRoutesInit</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">:</span> Promise<span class="token operator">&lt;</span><span class="token builtin">any</span><span class="token operator">&gt;</span> <span class="token operator">|</span> <span class="token keyword">void</span> <span class="token punctuation">{</span>
+        <span class="token builtin">console</span><span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'Controllers and routes isn\'t mounted'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token function">$onRoutesInit</span><span class="token punctuation">(</span>components<span class="token punctuation">:</span> IComponentScanned<span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">:</span> Promise<span class="token operator">&lt;</span><span class="token builtin">any</span><span class="token operator">&gt;</span> <span class="token operator">|</span> <span class="token keyword">void</span> <span class="token punctuation">{</span>
+       <span class="token builtin">console</span><span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'Controllers and routes are being built'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token punctuation">}</span>
+
+    <span class="token function">$afterRoutesInit</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">:</span> Promise<span class="token operator">&lt;</span><span class="token builtin">any</span><span class="token operator">&gt;</span> <span class="token operator">|</span> <span class="token keyword">void</span> <span class="token punctuation">{</span>
+        <span class="token builtin">console</span><span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'Controllers and routes are built'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token function">$onServerReady</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">:</span> Promise<span class="token operator">&lt;</span><span class="token builtin">any</span><span class="token operator">&gt;</span> <span class="token operator">|</span> <span class="token keyword">void</span> <span class="token punctuation">{</span>
+        <span class="token builtin">console</span><span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'Server is ready and listen the port'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>Since <span class="badge tip top" data-v-099ab69c>v4.31.0+</span>, it also possible to handle <code>$onDestroy</code> hook when a service or a controller is
+annotated with <code>@Scope('request')</code>:</p> <div class="language-typescript extra-class"><pre class="language-typescript"><code>@<span class="token function">Service</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+@<span class="token function">Scope</span><span class="token punctuation">(</span><span class="token string">'request'</span><span class="token punctuation">)</span>
+<span class="token keyword">export</span> <span class="token keyword">class</span> <span class="token class-name">MyService</span> <span class="token keyword">implements</span> <span class="token class-name">OnDestroy</span> <span class="token punctuation">{</span>
+  <span class="token function">$onDestroy</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token builtin">console</span><span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'Service destroyed'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><table><thead><tr><th>Hook</th> <th>Purpose and Timing</th></tr></thead> <tbody><tr><td>$onInit</td> <td>Respond after Injector have initialized all Services in the registry.</td></tr> <tr><td>$beforeRoutesInit</td> <td>Respond before loading the controllers. The middlewares and filters are already built.</td></tr> <tr><td>$onRoutesInit</td> <td>Launch the build of the controllers. This hook provide a list of component scanned by componentsScan.</td></tr> <tr><td>$afterRoutesInit</td> <td>Respond after the controllers build.</td></tr> <tr><td>$onServerReady</td> <td>Respond when the server is ready. At this step, HttpServer or/and HttpsServer object is available. The server listen the port.</td></tr> <tr><td>$onDestroy</td> <td>Respond when a Service or Controller is destroyed (uniquely when class is annoted with <code>@Scope('request')</code>.</td></tr></tbody></table> <div class="tip custom-block"><p class="custom-block-title">Interfaces are optional</p> <p>The interfaces are optional for JavaScript and Typescript developers from a purely technical perspective.
+The JavaScript language doesn't have interfaces. Ts.ED can't see TypeScript interfaces at runtime because they disappear from the transpiled JavaScript.</p> <p>Nonetheless, it's good practice to add interfaces to TypeScript directive classes in order to benefit from strong typing and editor tooling.</p></div></div> <div class="page-nav"><p class="inner"><span class="prev">
+        ←
+        <a href="/docs/controllers.html" class="prev">
+          Controllers
+        </a></span> <span class="next"><a href="/docs/factory.html">
+          Factory
+        </a>
+        →
+      </span></p></div> </article></div></main> <footer class="footer --with-sidebar"><div class="footer__improve-docs"><div class="container"><p>
+        Caught a mistake or want to contribute to the documentation?
+        <a href="https://github.com/romakita/ts-express-decorators/edit/master/docs/docs/services.md" target="_blank" rel="noopener noreferrer">Edit on Github</a></p></div></div> <div class="container--footer"><div class="container container--padded"><div class="footer__content"><div class="footer__next-step-header">
+          Contribute
+        </div> <p>
+          Help shape the future of Ts.Ed by joining our team and send us pull requests via our
+          <a href="https://github.com/romakita/ts-express-decorators">GitHub repository!</a></p> <div class="footer__next-step-header">
+          License
+        </div> <p>
+          Released under the <a href="#/license">MIT License</a> - © Copyright 2016 - 2018.
+        </p> <div class="github-stars"><iframe src="https://ghbtns.com/github-btn.html?user=romakita&amp;repo=ts-express-decorators&amp;type=watch&amp;count=true" allowtransparency="true" frameborder="0" scrolling="0" width="110" height="20"></iframe></div></div></div></div></footer> <!----></div></div>
+    <script src="/assets/js/28.01844679.js" defer></script><script src="/assets/js/3.6e5450d5.js" defer></script><script src="/assets/js/app.75f5c317.js" defer></script>
+  </body>
+</html>

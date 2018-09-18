@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Converters | Ts.ED</title>
+    <meta name="description" content="A TypeScript Framework on top of Express">
+    
+    
+    <link rel="preload" href="/assets/css/0.styles.d99335ca.css" as="style"><link rel="preload" href="/assets/js/app.75f5c317.js" as="script"><link rel="preload" href="/assets/js/8.aab31b00.js" as="script"><link rel="prefetch" href="/assets/js/20.e4194ca1.js"><link rel="prefetch" href="/assets/js/2.2d1ca846.js"><link rel="prefetch" href="/assets/js/3.6e5450d5.js"><link rel="prefetch" href="/assets/js/4.23bec895.js"><link rel="prefetch" href="/assets/js/5.8c756870.js"><link rel="prefetch" href="/assets/js/6.c4afc6f3.js"><link rel="prefetch" href="/assets/js/7.a3e8bae9.js"><link rel="prefetch" href="/assets/js/9.58ae776d.js"><link rel="prefetch" href="/assets/js/10.264f23fa.js"><link rel="prefetch" href="/assets/js/11.5b6e9cfb.js"><link rel="prefetch" href="/assets/js/12.097901d3.js"><link rel="prefetch" href="/assets/js/13.de2fb880.js"><link rel="prefetch" href="/assets/js/14.f86e7358.js"><link rel="prefetch" href="/assets/js/15.b8ffc915.js"><link rel="prefetch" href="/assets/js/16.6c9d07e6.js"><link rel="prefetch" href="/assets/js/17.2f947caa.js"><link rel="prefetch" href="/assets/js/18.2915a47e.js"><link rel="prefetch" href="/assets/js/19.c5f526e0.js"><link rel="prefetch" href="/assets/js/21.73dc2eda.js"><link rel="prefetch" href="/assets/js/22.8610be1b.js"><link rel="prefetch" href="/assets/js/23.9af27c68.js"><link rel="prefetch" href="/assets/js/24.d8313b57.js"><link rel="prefetch" href="/assets/js/25.a8337b81.js"><link rel="prefetch" href="/assets/js/26.91edff0d.js"><link rel="prefetch" href="/assets/js/27.fd0d16cf.js"><link rel="prefetch" href="/assets/js/28.01844679.js"><link rel="prefetch" href="/assets/js/29.2f32c0b8.js"><link rel="prefetch" href="/assets/js/30.dd85c693.js"><link rel="prefetch" href="/assets/js/31.db0f7a39.js"><link rel="prefetch" href="/assets/js/32.9d63ca52.js"><link rel="prefetch" href="/assets/js/33.9d8671ef.js"><link rel="prefetch" href="/assets/js/34.3405a98e.js"><link rel="prefetch" href="/assets/js/35.5172e06f.js"><link rel="prefetch" href="/assets/js/36.34894183.js"><link rel="prefetch" href="/assets/js/37.92527245.js"><link rel="prefetch" href="/assets/js/38.e3e7e346.js"><link rel="prefetch" href="/assets/js/39.5065a549.js"><link rel="prefetch" href="/assets/js/40.405813e0.js"><link rel="prefetch" href="/assets/js/41.0762bd94.js"><link rel="prefetch" href="/assets/js/42.37d5a625.js"><link rel="prefetch" href="/assets/js/43.2201fba0.js"><link rel="prefetch" href="/assets/js/44.81996e65.js"><link rel="prefetch" href="/assets/js/45.7308dbbd.js"><link rel="prefetch" href="/assets/js/46.133e72d8.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.d99335ca.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar --fluid"><div class="container"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">
+      Ts.ED
+    </span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <div class="search-box__wrapper"></div> <ul class="suggestions align-right"></ul></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/getting-started.html" class="nav-link">Getting started</a></div><div class="nav-item"><a href="/configuration.html" class="nav-link">Configuration</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title">Guide</span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/tutorials/" class="nav-link">
+          Examples
+        </a></li><li class="dropdown-item"><!----> <a href="/tutorials/passport.html" class="nav-link">
+          Passport.js
+        </a></li><li class="dropdown-item"><!----> <a href="/tutorials/typeorm.html" class="nav-link">
+          TypeORM
+        </a></li><li class="dropdown-item"><!----> <a href="/tutorials/mongoose.html" class="nav-link">
+          Mongoose
+        </a></li><li class="dropdown-item"><!----> <a href="/tutorials/socket-io.html" class="nav-link">
+          Socket.io
+        </a></li><li class="dropdown-item"><!----> <a href="/tutorials/swagger.html" class="nav-link">
+          Swagger
+        </a></li><li class="dropdown-item"><!----> <a href="/tutorials/ajv.html" class="nav-link">
+          Validation with AJV
+        </a></li><li class="dropdown-item"><!----> <a href="/tutorials/upload-files-with-multer.html" class="nav-link">
+          Upload files
+        </a></li><li class="dropdown-item"><!----> <a href="/tutorials/serve-static-files.html" class="nav-link">
+          Serve static files
+        </a></li><li class="dropdown-item"><!----> <a href="/tutorials/templating.html" class="nav-link">
+          Templating
+        </a></li><li class="dropdown-item"><!----> <a href="/tutorials/throw-http-exceptions.html" class="nav-link">
+          Throw HTTP exceptions
+        </a></li><li class="dropdown-item"><!----> <a href="/tutorials/not-found-page.html" class="nav-link">
+          Customize 404
+        </a></li><li class="dropdown-item"><!----> <a href="/tutorials/aws.html" class="nav-link">
+          AWS project
+        </a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title">Documentation</span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/docs/controllers.html" class="nav-link">
+          Controllers
+        </a></li><li class="dropdown-item"><!----> <a href="/docs/services.html" class="nav-link">
+          Services
+        </a></li><li class="dropdown-item"><!----> <a href="/docs/factory.html" class="nav-link">
+          Factory
+        </a></li><li class="dropdown-item"><!----> <a href="/docs/provider.html" class="nav-link">
+          Provider
+        </a></li><li class="dropdown-item"><!----> <a href="/docs/model.html" class="nav-link">
+          Models
+        </a></li><li class="dropdown-item"><!----> <a href="/docs/converters.html" class="nav-link router-link-exact-active router-link-active">
+          Converters
+        </a></li><li class="dropdown-item"><!----> <a href="/docs/middlewares.html" class="nav-link">
+          Middlewares
+        </a></li><li class="dropdown-item"><!----> <a href="/docs/scope.html" class="nav-link">
+          Scope
+        </a></li><li class="dropdown-item"><!----> <a href="/docs/filters.html" class="nav-link">
+          Filters
+        </a></li><li class="dropdown-item"><!----> <a href="/docs/interceptors.html" class="nav-link">
+          Interceptors
+        </a></li><li class="dropdown-item"><!----> <a href="/docs/server-loader.html" class="nav-link">
+          ServerLoader
+        </a></li><li class="dropdown-item"><!----> <a href="/docs/testing.html" class="nav-link">
+          Testing
+        </a></li></ul></div></div><div class="nav-item"><a href="/api.html" class="nav-link">Api Reference</a></div></nav> <div class="links-external"><div class="links-external-item"><a href="https://github.com/romakita/ts-express-decorators" target="_blank" rel="noopener noreferrer" class="repo-link"><svg aria-hidden="true" data-prefix="fab" data-icon="github" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512" data-fa-i2svg class="svg-inline--fa fa-github fa-w-16"><path fill="currentColor" d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"></path></svg></a></div></div></div></div></header> <main class="main-content"><div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/getting-started.html" class="nav-link">Getting started</a></div><div class="nav-item"><a href="/configuration.html" class="nav-link">Configuration</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title">Guide</span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/tutorials/" class="nav-link">
+          Examples
+        </a></li><li class="dropdown-item"><!----> <a href="/tutorials/passport.html" class="nav-link">
+          Passport.js
+        </a></li><li class="dropdown-item"><!----> <a href="/tutorials/typeorm.html" class="nav-link">
+          TypeORM
+        </a></li><li class="dropdown-item"><!----> <a href="/tutorials/mongoose.html" class="nav-link">
+          Mongoose
+        </a></li><li class="dropdown-item"><!----> <a href="/tutorials/socket-io.html" class="nav-link">
+          Socket.io
+        </a></li><li class="dropdown-item"><!----> <a href="/tutorials/swagger.html" class="nav-link">
+          Swagger
+        </a></li><li class="dropdown-item"><!----> <a href="/tutorials/ajv.html" class="nav-link">
+          Validation with AJV
+        </a></li><li class="dropdown-item"><!----> <a href="/tutorials/upload-files-with-multer.html" class="nav-link">
+          Upload files
+        </a></li><li class="dropdown-item"><!----> <a href="/tutorials/serve-static-files.html" class="nav-link">
+          Serve static files
+        </a></li><li class="dropdown-item"><!----> <a href="/tutorials/templating.html" class="nav-link">
+          Templating
+        </a></li><li class="dropdown-item"><!----> <a href="/tutorials/throw-http-exceptions.html" class="nav-link">
+          Throw HTTP exceptions
+        </a></li><li class="dropdown-item"><!----> <a href="/tutorials/not-found-page.html" class="nav-link">
+          Customize 404
+        </a></li><li class="dropdown-item"><!----> <a href="/tutorials/aws.html" class="nav-link">
+          AWS project
+        </a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title">Documentation</span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/docs/controllers.html" class="nav-link">
+          Controllers
+        </a></li><li class="dropdown-item"><!----> <a href="/docs/services.html" class="nav-link">
+          Services
+        </a></li><li class="dropdown-item"><!----> <a href="/docs/factory.html" class="nav-link">
+          Factory
+        </a></li><li class="dropdown-item"><!----> <a href="/docs/provider.html" class="nav-link">
+          Provider
+        </a></li><li class="dropdown-item"><!----> <a href="/docs/model.html" class="nav-link">
+          Models
+        </a></li><li class="dropdown-item"><!----> <a href="/docs/converters.html" class="nav-link router-link-exact-active router-link-active">
+          Converters
+        </a></li><li class="dropdown-item"><!----> <a href="/docs/middlewares.html" class="nav-link">
+          Middlewares
+        </a></li><li class="dropdown-item"><!----> <a href="/docs/scope.html" class="nav-link">
+          Scope
+        </a></li><li class="dropdown-item"><!----> <a href="/docs/filters.html" class="nav-link">
+          Filters
+        </a></li><li class="dropdown-item"><!----> <a href="/docs/interceptors.html" class="nav-link">
+          Interceptors
+        </a></li><li class="dropdown-item"><!----> <a href="/docs/server-loader.html" class="nav-link">
+          ServerLoader
+        </a></li><li class="dropdown-item"><!----> <a href="/docs/testing.html" class="nav-link">
+          Testing
+        </a></li></ul></div></div><div class="nav-item"><a href="/api.html" class="nav-link">Api Reference</a></div></nav>  <ul class="sidebar-links"><li><div class="sidebar-group first"><p class="sidebar-heading open"><span>Documentation</span> <!----></p> <ul class="sidebar-group-items"><li><a href="/docs/controllers.html" class="sidebar-link">Controllers</a></li><li><a href="/docs/services.html" class="sidebar-link">Services</a></li><li><a href="/docs/factory.html" class="sidebar-link">Factory</a></li><li><a href="/docs/provider.html" class="sidebar-link">Provider</a></li><li><a href="/docs/model.html" class="sidebar-link">Model</a></li><li><a href="/docs/converters.html" class="active sidebar-link">Converters</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/docs/converters.html#usage" class="sidebar-link">Usage</a></li><li class="sidebar-sub-header"><a href="/docs/converters.html#serialisation" class="sidebar-link">Serialisation</a></li><li class="sidebar-sub-header"><a href="/docs/converters.html#type-converters" class="sidebar-link">Type converters</a></li><li class="sidebar-sub-header"><a href="/docs/converters.html#validation" class="sidebar-link">Validation</a></li></ul></li><li><a href="/docs/middlewares.html" class="sidebar-link">Middlewares</a></li><li><a href="/docs/scope.html" class="sidebar-link">Scope</a></li><li><a href="/docs/filters.html" class="sidebar-link">Filters</a></li><li><a href="/docs/interceptors.html" class="sidebar-link">Interceptors</a></li><li><a href="/docs/server-loader.html" class="sidebar-link">ServerLoader</a></li><li><a href="/docs/testing.html" class="sidebar-link">Testing</a></li></ul></div></li></ul> </aside> <div class="page"><article class="container"> <div class="content"><h1 id="converters"><a href="#converters" aria-hidden="true" class="header-anchor">#</a> Converters</h1> <p>The Converters service is responsible for serializing and deserializing objects.</p> <p>It has two modes of operation:</p> <ul><li>The first uses the <a href="/docs/model.html">class models</a> for
+convert an object into a class (and vice versa).</li> <li>The second is based on the JSON object itself to provide an object with the right types. For example the deserialization of dates.</li></ul> <p>The Converters service is used by the following decorators:</p> <ul class="api-list"></ul> <h2 id="usage"><a href="#usage" aria-hidden="true" class="header-anchor">#</a> Usage</h2> <p>Models can be used at the controller level.
+Here is our model:</p> <div class="language-typescript extra-class"><pre class="language-typescript"><code><span class="token keyword">import</span>  <span class="token punctuation">{</span>Property<span class="token punctuation">,</span> Minimum<span class="token punctuation">,</span> PropertyType<span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">&quot;@tsed/common&quot;</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span>  <span class="token punctuation">{</span>Description<span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">&quot;@tsed/swagger&quot;</span><span class="token punctuation">;</span>
+
+<span class="token keyword">class</span> <span class="token class-name">Person</span> <span class="token punctuation">{</span>
+    @<span class="token function">Property</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+    firstName<span class="token punctuation">:</span> <span class="token builtin">string</span><span class="token punctuation">;</span>
+    
+    @<span class="token function">Property</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+    lastName<span class="token punctuation">:</span> <span class="token builtin">string</span><span class="token punctuation">;</span>
+    
+    @<span class="token function">Description</span><span class="token punctuation">(</span><span class="token string">&quot;Age in years&quot;</span><span class="token punctuation">)</span>
+    @<span class="token function">Minimum</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">)</span>
+    age<span class="token punctuation">:</span> <span class="token builtin">number</span><span class="token punctuation">;</span>
+    
+    @<span class="token function">PropertyType</span><span class="token punctuation">(</span>String<span class="token punctuation">)</span>
+    skills<span class="token punctuation">:</span> <span class="token builtin">Array</span><span class="token operator">&lt;</span><span class="token builtin">string</span><span class="token operator">&gt;</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><blockquote><p>Note: <code>@PropertyType</code> allow to specify the type of a collection.</p></blockquote> <p>And its uses on a controller:</p> <div class="language-typescript extra-class"><pre class="language-typescript"><code><span class="token keyword">import</span> <span class="token punctuation">{</span>Post<span class="token punctuation">,</span> Controller<span class="token punctuation">,</span> BodyParams<span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">&quot;@tsed/common&quot;</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> <span class="token punctuation">{</span>Person<span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">&quot;../models/Person&quot;</span><span class="token punctuation">;</span>
+
+@<span class="token function">Controller</span><span class="token punctuation">(</span><span class="token string">&quot;/&quot;</span><span class="token punctuation">)</span>
+<span class="token keyword">export</span> <span class="token keyword">class</span> <span class="token class-name">PersonsCtrl</span> <span class="token punctuation">{</span>
+
+     @<span class="token function">Post</span><span class="token punctuation">(</span><span class="token string">&quot;/&quot;</span><span class="token punctuation">)</span>
+     <span class="token function">save</span><span class="token punctuation">(</span>@<span class="token function">BodyParams</span><span class="token punctuation">(</span><span class="token punctuation">)</span> person<span class="token punctuation">:</span> Person<span class="token punctuation">)</span><span class="token punctuation">:</span> Person <span class="token punctuation">{</span>
+          <span class="token builtin">console</span><span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>person <span class="token keyword">instanceof</span> <span class="token class-name">Person</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// true</span>
+          <span class="token keyword">return</span> person<span class="token punctuation">;</span> <span class="token comment">// will be serialized according to your annotation on Person class.</span>
+     <span class="token punctuation">}</span> 
+
+     <span class="token comment">//OR</span>
+     @<span class="token function">Post</span><span class="token punctuation">(</span><span class="token string">&quot;/&quot;</span><span class="token punctuation">)</span>
+     <span class="token function">save</span><span class="token punctuation">(</span>@<span class="token function">BodyParams</span><span class="token punctuation">(</span><span class="token string">'person'</span><span class="token punctuation">)</span> person<span class="token punctuation">:</span> Person<span class="token punctuation">)</span><span class="token punctuation">:</span> Person <span class="token punctuation">{</span>
+          <span class="token builtin">console</span><span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>person <span class="token keyword">instanceof</span> <span class="token class-name">Person</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// true</span>
+          <span class="token keyword">return</span> person<span class="token punctuation">;</span> <span class="token comment">// will be serialized according to your annotation on Person class.</span>
+     <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><blockquote><p>In this example, Person model is used both as input and output types.</p></blockquote> <h2 id="serialisation"><a href="#serialisation" aria-hidden="true" class="header-anchor">#</a> Serialisation</h2> <p>When you use a class model as a return parameter, the Converters service will use the JSON Schema
+of the class to serialize the JSON object.</p> <p>Here is an example of a model whose fields are not voluntarily annotated:</p> <div class="language-typescript extra-class"><pre class="language-typescript"><code><span class="token keyword">class</span> <span class="token class-name">User</span> <span class="token punctuation">{</span>
+    _id<span class="token punctuation">:</span> <span class="token builtin">string</span><span class="token punctuation">;</span>
+    
+    @<span class="token function">Property</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+    firstName<span class="token punctuation">:</span> <span class="token builtin">string</span><span class="token punctuation">;</span>
+    
+    @<span class="token function">Property</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+    lastName<span class="token punctuation">:</span> <span class="token builtin">string</span><span class="token punctuation">;</span>
+    
+    password<span class="token punctuation">:</span> <span class="token builtin">string</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>And our controller:</p> <div class="language-typescript extra-class"><pre class="language-typescript"><code><span class="token keyword">import</span> <span class="token punctuation">{</span>Post<span class="token punctuation">,</span> Controller<span class="token punctuation">,</span> BodyParams<span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">&quot;@tsed/common&quot;</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> <span class="token punctuation">{</span>Person<span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">&quot;../models/Person&quot;</span><span class="token punctuation">;</span>
+
+@<span class="token function">Controller</span><span class="token punctuation">(</span><span class="token string">&quot;/&quot;</span><span class="token punctuation">)</span>
+<span class="token keyword">export</span> <span class="token keyword">class</span> <span class="token class-name">UsersCtrl</span> <span class="token punctuation">{</span>
+
+    @<span class="token function">Get</span><span class="token punctuation">(</span><span class="token string">&quot;/&quot;</span><span class="token punctuation">)</span>
+    <span class="token keyword">get</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">:</span> User <span class="token punctuation">{</span>
+        <span class="token keyword">const</span> user <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">User</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        user<span class="token punctuation">.</span>_id <span class="token operator">=</span> <span class="token string">&quot;12345&quot;</span><span class="token punctuation">;</span>
+        user<span class="token punctuation">.</span>firstName <span class="token operator">=</span> <span class="token string">&quot;John&quot;</span><span class="token punctuation">;</span>
+        user<span class="token punctuation">.</span>lastName <span class="token operator">=</span> <span class="token string">&quot;Doe&quot;</span><span class="token punctuation">;</span>
+        user<span class="token punctuation">.</span>password <span class="token operator">=</span> <span class="token string">&quot;secretpassword&quot;</span><span class="token punctuation">;</span>
+          <span class="token keyword">return</span> 
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>Our serialized <code>User</code> object will be:</p> <div class="language-json extra-class"><pre class="language-json"><code><span class="token punctuation">{</span>
+  <span class="token property">&quot;firstName&quot;</span><span class="token operator">:</span> <span class="token string">&quot;John&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;lastName&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Doe&quot;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><blockquote><p>Non-annotated fields will not be copied into the final object.</p></blockquote> <p>You can also explicitly tell the Converters service that the field should not be serialized with the decorator <code>@IgnoreProperty</code>.</p> <div class="language-typescript extra-class"><pre class="language-typescript"><code><span class="token keyword">class</span> <span class="token class-name">User</span> <span class="token punctuation">{</span>
+    @<span class="token function">NotSerialize</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+    _id<span class="token punctuation">:</span> <span class="token builtin">string</span><span class="token punctuation">;</span>
+    
+    @<span class="token function">Property</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+    firstName<span class="token punctuation">:</span> <span class="token builtin">string</span><span class="token punctuation">;</span>
+    
+    @<span class="token function">Property</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+    lastName<span class="token punctuation">:</span> <span class="token builtin">string</span><span class="token punctuation">;</span>
+    
+    @<span class="token function">IgnoreProperty</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+    password<span class="token punctuation">:</span> <span class="token builtin">string</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h2 id="type-converters"><a href="#type-converters" aria-hidden="true" class="header-anchor">#</a> Type converters</h2> <p>The Converters service relies on a subservice set to convert the following types:</p> <ul><li>Basics: <a href="https://github.com/Romakita/ts-express-decorators/blob/master/src/common/converters/components/PrimitiveConverter.ts" target="_blank" rel="noopener noreferrer">String, Number et Boolean<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a>,</li> <li>Objects: <a href="https://github.com/Romakita/ts-express-decorators/blob/master/src/common/converters/components/DateConverter.ts" target="_blank" rel="noopener noreferrer">Date<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a> et <a href="https://github.com/Romakita/ts-express-decorators/blob/master/src/common/converters/components/SymbolConverter.ts" target="_blank" rel="noopener noreferrer">Symbol<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a>,</li> <li>Collections: <a href="https://github.com/Romakita/ts-express-decorators/blob/master/src/common/converters/components/ArrayConverter.ts" target="_blank" rel="noopener noreferrer">Array<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a>, <a href="https://github.com/Romakita/ts-express-decorators/blob/master/src/common/converters/components/MapConverter.ts" target="_blank" rel="noopener noreferrer">Map<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a> et <a href="https://github.com/Romakita/ts-express-decorators/blob/master/src/common/converters/components/SetConverter.ts" target="_blank" rel="noopener noreferrer">Set<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a>.</li></ul> <blockquote><p>Set and Map types will be converted into an JSON object (instead of Array).</p></blockquote> <ul class="api-list"></ul> <h3 id="example"><a href="#example" aria-hidden="true" class="header-anchor">#</a> Example</h3> <p>Here an example of a type converter:</p> <div class="language-typescript extra-class"><pre class="language-typescript"><code><span class="token keyword">import</span> <span class="token punctuation">{</span>IConverter<span class="token punctuation">,</span> Converter<span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">&quot;@tsed/common&quot;</span><span class="token punctuation">;</span>
+
+@<span class="token function">Converter</span><span class="token punctuation">(</span>String<span class="token punctuation">,</span> Number<span class="token punctuation">,</span> Boolean<span class="token punctuation">)</span>
+<span class="token keyword">export</span> <span class="token keyword">class</span> <span class="token class-name">PrimitiveConverter</span> <span class="token keyword">implements</span> <span class="token class-name">IConverter</span> <span class="token punctuation">{</span>
+
+    <span class="token function">deserialize</span><span class="token punctuation">(</span>data<span class="token punctuation">:</span> <span class="token builtin">string</span><span class="token punctuation">,</span> target<span class="token punctuation">:</span> <span class="token builtin">any</span><span class="token punctuation">)</span><span class="token punctuation">:</span> String <span class="token operator">|</span> Number <span class="token operator">|</span> Boolean <span class="token operator">|</span> <span class="token keyword">void</span> <span class="token punctuation">{</span>
+
+        <span class="token keyword">switch</span> <span class="token punctuation">(</span>target<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            <span class="token keyword">case</span> String<span class="token punctuation">:</span>
+                <span class="token keyword">return</span> <span class="token string">&quot;&quot;</span> <span class="token operator">+</span> data<span class="token punctuation">;</span>
+
+            <span class="token keyword">case</span> Number<span class="token punctuation">:</span>
+                <span class="token keyword">const</span> n <span class="token operator">=</span> <span class="token operator">+</span>data<span class="token punctuation">;</span>
+                <span class="token keyword">return</span> n<span class="token punctuation">;</span>
+
+            <span class="token keyword">case</span> Boolean<span class="token punctuation">:</span>
+
+                <span class="token keyword">if</span> <span class="token punctuation">(</span>data <span class="token operator">===</span> <span class="token string">&quot;true&quot;</span><span class="token punctuation">)</span> <span class="token keyword">return</span> <span class="token boolean">true</span><span class="token punctuation">;</span>
+                <span class="token keyword">if</span> <span class="token punctuation">(</span>data <span class="token operator">===</span> <span class="token string">&quot;false&quot;</span><span class="token punctuation">)</span> <span class="token keyword">return</span> <span class="token boolean">false</span><span class="token punctuation">;</span>
+
+                <span class="token keyword">return</span> <span class="token operator">!</span><span class="token operator">!</span>data<span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+
+    <span class="token punctuation">}</span>
+
+    <span class="token function">serialize</span><span class="token punctuation">(</span>object<span class="token punctuation">:</span> String <span class="token operator">|</span> Number <span class="token operator">|</span> Boolean<span class="token punctuation">)</span><span class="token punctuation">:</span> <span class="token builtin">any</span> <span class="token punctuation">{</span>
+        <span class="token keyword">return</span> object<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h3 id="create-a-custom-converter"><a href="#create-a-custom-converter" aria-hidden="true" class="header-anchor">#</a> Create a custom converter</h3> <p>Ts.ED creates its own converter in the same way as the previous example.</p> <p>To begin, you must add to your configuration the directory where are stored
+your classes dedicated to converting types.</p> <div class="language-typescript extra-class"><pre class="language-typescript"><code><span class="token keyword">import</span> <span class="token punctuation">{</span>ServerLoader<span class="token punctuation">,</span> ServerSettings<span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">&quot;@tsed/common&quot;</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> Path <span class="token operator">=</span> <span class="token keyword">require</span><span class="token punctuation">(</span><span class="token string">&quot;path&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">const</span> rootDir <span class="token operator">=</span> Path<span class="token punctuation">.</span><span class="token function">resolve</span><span class="token punctuation">(</span>__dirname<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+@<span class="token function">ServerSettings</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+   componentsScan<span class="token punctuation">:</span> <span class="token punctuation">[</span>
+       <span class="token template-string"><span class="token string">`</span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>rootDir<span class="token interpolation-punctuation punctuation">}</span></span><span class="token string">/converters/**/**.js`</span></span>
+   <span class="token punctuation">]</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+<span class="token keyword">export</span> <span class="token keyword">class</span> <span class="token class-name">Server</span> <span class="token keyword">extends</span> <span class="token class-name">ServerLoader</span> <span class="token punctuation">{</span>
+   
+<span class="token punctuation">}</span>       
+</code></pre></div><p>Then you will need to declare your class with the <code>@Converter</code> annotation:</p> <div class="language-typescript extra-class"><pre class="language-typescript"><code><span class="token keyword">import</span> <span class="token punctuation">{</span>ConverterService<span class="token punctuation">,</span> Converter<span class="token punctuation">,</span> IConverter<span class="token punctuation">,</span> IDeserializer<span class="token punctuation">,</span> ISerializer<span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">&quot;@tsed/common&quot;</span><span class="token punctuation">;</span>
+
+@<span class="token function">Converter</span><span class="token punctuation">(</span><span class="token builtin">Array</span><span class="token punctuation">)</span>
+<span class="token keyword">export</span> <span class="token keyword">class</span> <span class="token class-name">ArrayConverter</span> <span class="token keyword">implements</span> <span class="token class-name">IConverter</span> <span class="token punctuation">{</span>
+
+    deserialize<span class="token operator">&lt;</span><span class="token constant">T</span><span class="token operator">&gt;</span><span class="token punctuation">(</span>data<span class="token punctuation">:</span> <span class="token builtin">any</span><span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">,</span> target<span class="token punctuation">:</span> <span class="token builtin">any</span><span class="token punctuation">,</span> baseType<span class="token punctuation">:</span> <span class="token constant">T</span><span class="token punctuation">,</span> deserializer<span class="token punctuation">:</span> IDeserializer<span class="token punctuation">)</span><span class="token punctuation">:</span> <span class="token constant">T</span><span class="token punctuation">[</span><span class="token punctuation">]</span> <span class="token punctuation">{</span>
+         
+        <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token function">isArrayOrArrayClass</span><span class="token punctuation">(</span>data<span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            <span class="token keyword">return</span> <span class="token punctuation">(</span>data <span class="token keyword">as</span> <span class="token builtin">Array</span><span class="token operator">&lt;</span><span class="token builtin">any</span><span class="token operator">&gt;</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">map</span><span class="token punctuation">(</span>item <span class="token operator">=&gt;</span>
+                <span class="token function">deserializer</span><span class="token punctuation">(</span>item<span class="token punctuation">,</span> baseType<span class="token punctuation">)</span>
+            <span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+
+        <span class="token keyword">return</span> <span class="token punctuation">[</span>data<span class="token punctuation">]</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token function">serialize</span><span class="token punctuation">(</span>data<span class="token punctuation">:</span> <span class="token builtin">any</span><span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">,</span> serializer<span class="token punctuation">:</span> ISerializer<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">return</span> <span class="token punctuation">(</span>data <span class="token keyword">as</span> <span class="token builtin">Array</span><span class="token operator">&lt;</span><span class="token builtin">any</span><span class="token operator">&gt;</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">map</span><span class="token punctuation">(</span>item <span class="token operator">=&gt;</span>
+            <span class="token function">serializer</span><span class="token punctuation">(</span>item<span class="token punctuation">)</span>
+        <span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><div class="tip custom-block"><p class="custom-block-title">Note</p> <p>This example will replace the default Ts.ED converter.</p></div> <p>It is therefore quite possible to replace all converters with your own classes (especially the Date).</p> <h2 id="validation"><a href="#validation" aria-hidden="true" class="header-anchor">#</a> Validation</h2> <p>The Converter service provides some of the validation of a class model.
+It will check the consistency of the JSON object with the data model. For example :</p> <ul><li>If the JSON object contains one more field than expected in the model (<code>validationModelStrict</code> or <code>@ModelStrict</code>).</li> <li>If the field is mandatory <code>@Required</code>,</li> <li>If the field is mandatory but can be <code>null</code> (<code>@Allow(null)</code>).</li></ul> <p>Here is a complete example of a model:</p> <div class="language-typescript extra-class"><pre class="language-typescript"><code><span class="token keyword">class</span> <span class="token class-name">EventModel</span> <span class="token punctuation">{</span>
+    @<span class="token function">Required</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+    name<span class="token punctuation">:</span> <span class="token builtin">string</span><span class="token punctuation">;</span>
+     
+    @<span class="token function">PropertyName</span><span class="token punctuation">(</span><span class="token string">'startDate'</span><span class="token punctuation">)</span>
+    startDate<span class="token punctuation">:</span> Date<span class="token punctuation">;</span>
+
+    @<span class="token function">Property</span><span class="token punctuation">(</span><span class="token punctuation">{</span>name<span class="token punctuation">:</span> <span class="token string">'end-date'</span><span class="token punctuation">}</span><span class="token punctuation">)</span>
+    endDate<span class="token punctuation">:</span> Date<span class="token punctuation">;</span>
+
+    @<span class="token function">PropertyType</span><span class="token punctuation">(</span>TaskModel<span class="token punctuation">)</span>
+    @<span class="token function">Required</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+    @<span class="token function">Allow</span><span class="token punctuation">(</span><span class="token keyword">null</span><span class="token punctuation">)</span>
+    tasks<span class="token punctuation">:</span> TaskModel<span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">class</span> <span class="token class-name">TaskModel</span> <span class="token punctuation">{</span>
+    @<span class="token function">Required</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+    subject<span class="token punctuation">:</span> <span class="token builtin">string</span><span class="token punctuation">;</span>
+    
+    @<span class="token function">Property</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+    rate<span class="token punctuation">:</span> <span class="token builtin">number</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h3 id="validationmodelstrict"><a href="#validationmodelstrict" aria-hidden="true" class="header-anchor">#</a> validationModelStrict</h3> <p>The <code>strict</code> validation of an object can be modified either globally or for a specific model.</p> <p>Here is an example of <code>strict</code> validation:</p> <div class="language-typescript extra-class"><pre class="language-typescript"><code><span class="token keyword">import</span> <span class="token punctuation">{</span>InjectorService<span class="token punctuation">,</span> ConvertersService<span class="token punctuation">,</span> Required<span class="token punctuation">,</span> Property<span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">&quot;@tsed/common&quot;</span><span class="token punctuation">;</span>
+
+InjectorService<span class="token punctuation">.</span><span class="token function">load</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token keyword">class</span> <span class="token class-name">TaskModel</span> <span class="token punctuation">{</span>
+    @<span class="token function">Required</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+    subject<span class="token punctuation">:</span> <span class="token builtin">string</span><span class="token punctuation">;</span>
+    
+    @<span class="token function">Property</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+    rate<span class="token punctuation">:</span> <span class="token builtin">number</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">const</span> convertersService <span class="token operator">=</span> InjectorService<span class="token punctuation">.</span><span class="token keyword">get</span><span class="token punctuation">(</span>ConvertersService<span class="token punctuation">)</span><span class="token punctuation">;</span>
+convertersService<span class="token punctuation">.</span>validationModelStrict <span class="token operator">=</span> <span class="token boolean">true</span><span class="token punctuation">;</span>
+
+convertersService<span class="token punctuation">.</span><span class="token function">deserialize</span><span class="token punctuation">(</span><span class="token punctuation">{</span>unknowProperty<span class="token punctuation">:</span> <span class="token string">&quot;test&quot;</span><span class="token punctuation">}</span><span class="token punctuation">,</span> TaskModel<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// BadRequest</span>
+</code></pre></div><h4 id="global"><a href="#global" aria-hidden="true" class="header-anchor">#</a> Global</h4> <div class="language-typescript extra-class"><pre class="language-typescript"><code><span class="token keyword">import</span> <span class="token punctuation">{</span>ServerLoader<span class="token punctuation">,</span> ServerSettings<span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">&quot;@tsed/common&quot;</span><span class="token punctuation">;</span>
+
+@<span class="token function">ServerSettings</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+   validationModelStrict<span class="token punctuation">:</span> <span class="token boolean">true</span> <span class="token operator">|</span> <span class="token boolean">false</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+<span class="token keyword">export</span> <span class="token keyword">class</span> <span class="token class-name">Server</span> <span class="token keyword">extends</span> <span class="token class-name">ServerLoader</span> <span class="token punctuation">{</span>
+   
+<span class="token punctuation">}</span>      
+</code></pre></div><blockquote><p>By default, the Converters service is configured on the <code>strict</code> mode.</p></blockquote> <h4 id="modelstrict"><a href="#modelstrict" aria-hidden="true" class="header-anchor">#</a> ModelStrict</h4> <div class="language-typescript extra-class"><pre class="language-typescript"><code><span class="token keyword">import</span> <span class="token punctuation">{</span>ConvertersService<span class="token punctuation">,</span> ModelStrict<span class="token punctuation">,</span> Required<span class="token punctuation">,</span> Property<span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">&quot;@tsed/common&quot;</span><span class="token punctuation">;</span>
+
+@<span class="token function">ModelStrict</span><span class="token punctuation">(</span><span class="token boolean">false</span><span class="token punctuation">)</span>
+<span class="token keyword">class</span> <span class="token class-name">TaskModel</span> <span class="token punctuation">{</span>
+   @<span class="token function">Required</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+   subject<span class="token punctuation">:</span> <span class="token builtin">string</span><span class="token punctuation">;</span>
+   
+   @<span class="token function">Property</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+   rate<span class="token punctuation">:</span> <span class="token builtin">number</span><span class="token punctuation">;</span>
+   <span class="token punctuation">[</span>key<span class="token punctuation">:</span> <span class="token builtin">string</span><span class="token punctuation">]</span><span class="token punctuation">:</span> <span class="token builtin">any</span><span class="token punctuation">;</span> <span class="token comment">// recommended</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>In this case, the service will not raise more exception:</p> <div class="language-typescript extra-class"><pre class="language-typescript"><code><span class="token keyword">import</span> <span class="token punctuation">{</span>InjectorService<span class="token punctuation">,</span> ConvertersService<span class="token punctuation">,</span> ModelStrict<span class="token punctuation">,</span> Required<span class="token punctuation">,</span> Property<span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">&quot;@tsed/common&quot;</span><span class="token punctuation">;</span>
+
+InjectorService<span class="token punctuation">.</span><span class="token function">load</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token keyword">const</span> convertersService <span class="token operator">=</span> InjectorService<span class="token punctuation">.</span><span class="token keyword">get</span><span class="token punctuation">(</span>ConvertersService<span class="token punctuation">)</span><span class="token punctuation">;</span>
+convertersService<span class="token punctuation">.</span>validationModelStrict <span class="token operator">=</span> <span class="token boolean">true</span><span class="token punctuation">;</span>
+
+<span class="token keyword">const</span> result <span class="token operator">=</span> convertersService<span class="token punctuation">.</span><span class="token function">deserialize</span><span class="token punctuation">(</span><span class="token punctuation">{</span>unknowProperty<span class="token punctuation">:</span> <span class="token string">&quot;test&quot;</span><span class="token punctuation">}</span><span class="token punctuation">,</span> TaskModel<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token builtin">console</span><span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>result<span class="token punctuation">)</span> <span class="token comment">// TaskModel {unknowProperty: &quot;test&quot;}</span>
+</code></pre></div><div class="tip custom-block"><p class="custom-block-title">TIP</p> <p>If you have disabled <code>strict</code> validation at the global level, you can use the <code>@ModelStrict(true)</code> decorator
+to enable validation for a specific model.</p></div></div> <div class="page-nav"><p class="inner"><span class="prev">
+        ←
+        <a href="/docs/model.html" class="prev">
+          Model
+        </a></span> <span class="next"><a href="/docs/middlewares.html">
+          Middlewares
+        </a>
+        →
+      </span></p></div> </article></div></main> <footer class="footer --with-sidebar"><div class="footer__improve-docs"><div class="container"><p>
+        Caught a mistake or want to contribute to the documentation?
+        <a href="https://github.com/romakita/ts-express-decorators/edit/master/docs/docs/converters.md" target="_blank" rel="noopener noreferrer">Edit on Github</a></p></div></div> <div class="container--footer"><div class="container container--padded"><div class="footer__content"><div class="footer__next-step-header">
+          Contribute
+        </div> <p>
+          Help shape the future of Ts.Ed by joining our team and send us pull requests via our
+          <a href="https://github.com/romakita/ts-express-decorators">GitHub repository!</a></p> <div class="footer__next-step-header">
+          License
+        </div> <p>
+          Released under the <a href="#/license">MIT License</a> - © Copyright 2016 - 2018.
+        </p> <div class="github-stars"><iframe src="https://ghbtns.com/github-btn.html?user=romakita&amp;repo=ts-express-decorators&amp;type=watch&amp;count=true" allowtransparency="true" frameborder="0" scrolling="0" width="110" height="20"></iframe></div></div></div></div></footer> <!----></div></div>
+    <script src="/assets/js/8.aab31b00.js" defer></script><script src="/assets/js/app.75f5c317.js" defer></script>
+  </body>
+</html>

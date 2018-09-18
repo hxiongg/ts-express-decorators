@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Getting started | Ts.ED</title>
+    <meta name="description" content="A TypeScript Framework on top of Express">
+    
+    
+    <link rel="preload" href="/assets/css/0.styles.d99335ca.css" as="style"><link rel="preload" href="/assets/js/app.75f5c317.js" as="script"><link rel="preload" href="/assets/js/30.dd85c693.js" as="script"><link rel="prefetch" href="/assets/js/20.e4194ca1.js"><link rel="prefetch" href="/assets/js/2.2d1ca846.js"><link rel="prefetch" href="/assets/js/3.6e5450d5.js"><link rel="prefetch" href="/assets/js/4.23bec895.js"><link rel="prefetch" href="/assets/js/5.8c756870.js"><link rel="prefetch" href="/assets/js/6.c4afc6f3.js"><link rel="prefetch" href="/assets/js/7.a3e8bae9.js"><link rel="prefetch" href="/assets/js/8.aab31b00.js"><link rel="prefetch" href="/assets/js/9.58ae776d.js"><link rel="prefetch" href="/assets/js/10.264f23fa.js"><link rel="prefetch" href="/assets/js/11.5b6e9cfb.js"><link rel="prefetch" href="/assets/js/12.097901d3.js"><link rel="prefetch" href="/assets/js/13.de2fb880.js"><link rel="prefetch" href="/assets/js/14.f86e7358.js"><link rel="prefetch" href="/assets/js/15.b8ffc915.js"><link rel="prefetch" href="/assets/js/16.6c9d07e6.js"><link rel="prefetch" href="/assets/js/17.2f947caa.js"><link rel="prefetch" href="/assets/js/18.2915a47e.js"><link rel="prefetch" href="/assets/js/19.c5f526e0.js"><link rel="prefetch" href="/assets/js/21.73dc2eda.js"><link rel="prefetch" href="/assets/js/22.8610be1b.js"><link rel="prefetch" href="/assets/js/23.9af27c68.js"><link rel="prefetch" href="/assets/js/24.d8313b57.js"><link rel="prefetch" href="/assets/js/25.a8337b81.js"><link rel="prefetch" href="/assets/js/26.91edff0d.js"><link rel="prefetch" href="/assets/js/27.fd0d16cf.js"><link rel="prefetch" href="/assets/js/28.01844679.js"><link rel="prefetch" href="/assets/js/29.2f32c0b8.js"><link rel="prefetch" href="/assets/js/31.db0f7a39.js"><link rel="prefetch" href="/assets/js/32.9d63ca52.js"><link rel="prefetch" href="/assets/js/33.9d8671ef.js"><link rel="prefetch" href="/assets/js/34.3405a98e.js"><link rel="prefetch" href="/assets/js/35.5172e06f.js"><link rel="prefetch" href="/assets/js/36.34894183.js"><link rel="prefetch" href="/assets/js/37.92527245.js"><link rel="prefetch" href="/assets/js/38.e3e7e346.js"><link rel="prefetch" href="/assets/js/39.5065a549.js"><link rel="prefetch" href="/assets/js/40.405813e0.js"><link rel="prefetch" href="/assets/js/41.0762bd94.js"><link rel="prefetch" href="/assets/js/42.37d5a625.js"><link rel="prefetch" href="/assets/js/43.2201fba0.js"><link rel="prefetch" href="/assets/js/44.81996e65.js"><link rel="prefetch" href="/assets/js/45.7308dbbd.js"><link rel="prefetch" href="/assets/js/46.133e72d8.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.d99335ca.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar --fluid"><div class="container"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">
+      Ts.ED
+    </span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <div class="search-box__wrapper"></div> <ul class="suggestions align-right"></ul></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/getting-started.html" class="nav-link router-link-exact-active router-link-active">Getting started</a></div><div class="nav-item"><a href="/configuration.html" class="nav-link">Configuration</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title">Guide</span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/tutorials/" class="nav-link">
+          Examples
+        </a></li><li class="dropdown-item"><!----> <a href="/tutorials/passport.html" class="nav-link">
+          Passport.js
+        </a></li><li class="dropdown-item"><!----> <a href="/tutorials/typeorm.html" class="nav-link">
+          TypeORM
+        </a></li><li class="dropdown-item"><!----> <a href="/tutorials/mongoose.html" class="nav-link">
+          Mongoose
+        </a></li><li class="dropdown-item"><!----> <a href="/tutorials/socket-io.html" class="nav-link">
+          Socket.io
+        </a></li><li class="dropdown-item"><!----> <a href="/tutorials/swagger.html" class="nav-link">
+          Swagger
+        </a></li><li class="dropdown-item"><!----> <a href="/tutorials/ajv.html" class="nav-link">
+          Validation with AJV
+        </a></li><li class="dropdown-item"><!----> <a href="/tutorials/upload-files-with-multer.html" class="nav-link">
+          Upload files
+        </a></li><li class="dropdown-item"><!----> <a href="/tutorials/serve-static-files.html" class="nav-link">
+          Serve static files
+        </a></li><li class="dropdown-item"><!----> <a href="/tutorials/templating.html" class="nav-link">
+          Templating
+        </a></li><li class="dropdown-item"><!----> <a href="/tutorials/throw-http-exceptions.html" class="nav-link">
+          Throw HTTP exceptions
+        </a></li><li class="dropdown-item"><!----> <a href="/tutorials/not-found-page.html" class="nav-link">
+          Customize 404
+        </a></li><li class="dropdown-item"><!----> <a href="/tutorials/aws.html" class="nav-link">
+          AWS project
+        </a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title">Documentation</span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/docs/controllers.html" class="nav-link">
+          Controllers
+        </a></li><li class="dropdown-item"><!----> <a href="/docs/services.html" class="nav-link">
+          Services
+        </a></li><li class="dropdown-item"><!----> <a href="/docs/factory.html" class="nav-link">
+          Factory
+        </a></li><li class="dropdown-item"><!----> <a href="/docs/provider.html" class="nav-link">
+          Provider
+        </a></li><li class="dropdown-item"><!----> <a href="/docs/model.html" class="nav-link">
+          Models
+        </a></li><li class="dropdown-item"><!----> <a href="/docs/converters.html" class="nav-link">
+          Converters
+        </a></li><li class="dropdown-item"><!----> <a href="/docs/middlewares.html" class="nav-link">
+          Middlewares
+        </a></li><li class="dropdown-item"><!----> <a href="/docs/scope.html" class="nav-link">
+          Scope
+        </a></li><li class="dropdown-item"><!----> <a href="/docs/filters.html" class="nav-link">
+          Filters
+        </a></li><li class="dropdown-item"><!----> <a href="/docs/interceptors.html" class="nav-link">
+          Interceptors
+        </a></li><li class="dropdown-item"><!----> <a href="/docs/server-loader.html" class="nav-link">
+          ServerLoader
+        </a></li><li class="dropdown-item"><!----> <a href="/docs/testing.html" class="nav-link">
+          Testing
+        </a></li></ul></div></div><div class="nav-item"><a href="/api.html" class="nav-link">Api Reference</a></div></nav> <div class="links-external"><div class="links-external-item"><a href="https://github.com/romakita/ts-express-decorators" target="_blank" rel="noopener noreferrer" class="repo-link"><svg aria-hidden="true" data-prefix="fab" data-icon="github" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512" data-fa-i2svg class="svg-inline--fa fa-github fa-w-16"><path fill="currentColor" d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"></path></svg></a></div></div></div></div></header> <main class="main-content"><div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/getting-started.html" class="nav-link router-link-exact-active router-link-active">Getting started</a></div><div class="nav-item"><a href="/configuration.html" class="nav-link">Configuration</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title">Guide</span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/tutorials/" class="nav-link">
+          Examples
+        </a></li><li class="dropdown-item"><!----> <a href="/tutorials/passport.html" class="nav-link">
+          Passport.js
+        </a></li><li class="dropdown-item"><!----> <a href="/tutorials/typeorm.html" class="nav-link">
+          TypeORM
+        </a></li><li class="dropdown-item"><!----> <a href="/tutorials/mongoose.html" class="nav-link">
+          Mongoose
+        </a></li><li class="dropdown-item"><!----> <a href="/tutorials/socket-io.html" class="nav-link">
+          Socket.io
+        </a></li><li class="dropdown-item"><!----> <a href="/tutorials/swagger.html" class="nav-link">
+          Swagger
+        </a></li><li class="dropdown-item"><!----> <a href="/tutorials/ajv.html" class="nav-link">
+          Validation with AJV
+        </a></li><li class="dropdown-item"><!----> <a href="/tutorials/upload-files-with-multer.html" class="nav-link">
+          Upload files
+        </a></li><li class="dropdown-item"><!----> <a href="/tutorials/serve-static-files.html" class="nav-link">
+          Serve static files
+        </a></li><li class="dropdown-item"><!----> <a href="/tutorials/templating.html" class="nav-link">
+          Templating
+        </a></li><li class="dropdown-item"><!----> <a href="/tutorials/throw-http-exceptions.html" class="nav-link">
+          Throw HTTP exceptions
+        </a></li><li class="dropdown-item"><!----> <a href="/tutorials/not-found-page.html" class="nav-link">
+          Customize 404
+        </a></li><li class="dropdown-item"><!----> <a href="/tutorials/aws.html" class="nav-link">
+          AWS project
+        </a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title">Documentation</span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/docs/controllers.html" class="nav-link">
+          Controllers
+        </a></li><li class="dropdown-item"><!----> <a href="/docs/services.html" class="nav-link">
+          Services
+        </a></li><li class="dropdown-item"><!----> <a href="/docs/factory.html" class="nav-link">
+          Factory
+        </a></li><li class="dropdown-item"><!----> <a href="/docs/provider.html" class="nav-link">
+          Provider
+        </a></li><li class="dropdown-item"><!----> <a href="/docs/model.html" class="nav-link">
+          Models
+        </a></li><li class="dropdown-item"><!----> <a href="/docs/converters.html" class="nav-link">
+          Converters
+        </a></li><li class="dropdown-item"><!----> <a href="/docs/middlewares.html" class="nav-link">
+          Middlewares
+        </a></li><li class="dropdown-item"><!----> <a href="/docs/scope.html" class="nav-link">
+          Scope
+        </a></li><li class="dropdown-item"><!----> <a href="/docs/filters.html" class="nav-link">
+          Filters
+        </a></li><li class="dropdown-item"><!----> <a href="/docs/interceptors.html" class="nav-link">
+          Interceptors
+        </a></li><li class="dropdown-item"><!----> <a href="/docs/server-loader.html" class="nav-link">
+          ServerLoader
+        </a></li><li class="dropdown-item"><!----> <a href="/docs/testing.html" class="nav-link">
+          Testing
+        </a></li></ul></div></div><div class="nav-item"><a href="/api.html" class="nav-link">Api Reference</a></div></nav>  <ul class="sidebar-links"><li><div class="sidebar-group first"><p class="sidebar-heading open"><span>Getting started</span> <!----></p> <ul class="sidebar-group-items"><li><a href="/getting-started.html#installation" class="sidebar-link">Installation</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/getting-started.html#optional" class="sidebar-link">Optional</a></li></ul></li><li><a href="/getting-started.html#quick-start" class="sidebar-link">Quick start</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/getting-started.html#create-your-express-server" class="sidebar-link">Create your express server</a></li></ul></li><li><a href="/getting-started.html#create-your-first-controller" class="sidebar-link">Create your first controller</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/getting-started.html#ready-for-more" class="sidebar-link">Ready for More?</a></li></ul></li></ul></div></li></ul> </aside> <div class="page"><article class="container"> <div class="content"><h1 id="getting-started"><a href="#getting-started" aria-hidden="true" class="header-anchor">#</a> Getting started</h1> <h2 id="installation"><a href="#installation" aria-hidden="true" class="header-anchor">#</a> Installation</h2> <p>You can get the latest version of Ts.ED using the following npm command:</p> <div class="language-bash extra-class"><pre class="language-bash"><code>$ <span class="token function">npm</span> <span class="token function">install</span> --save-dev typescript @types/express
+$ <span class="token function">npm</span> <span class="token function">install</span> --save express@4 @tsed/core @tsed/common
+</code></pre></div><p>The following modules are also recommended:</p> <div class="language-bash extra-class"><pre class="language-bash"><code>$ <span class="token function">npm</span> <span class="token function">install</span> --save body-parser compression cookie-parser method-override
+$ <span class="token function">npm</span> <span class="token function">install</span> --save-dev ts-node nodemon
+</code></pre></div><blockquote><p><strong>Important!</strong> Ts.ED requires Node &gt;= 6, Express &gt;= 4, TypeScript &gt;= 2.0 and
+the <code>experimentalDecorators</code>, <code>emitDecoratorMetadata</code>, <code>types</code> and <code>lib</code> compilation
+options in your <code>tsconfig.json</code> file.</p></blockquote> <div class="language-json extra-class"><pre class="language-json"><code><span class="token punctuation">{</span>
+  <span class="token property">&quot;compilerOptions&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token property">&quot;target&quot;</span><span class="token operator">:</span> <span class="token string">&quot;es2015&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;lib&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">&quot;es2015&quot;</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;types&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">&quot;reflect-metadata&quot;</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;module&quot;</span><span class="token operator">:</span> <span class="token string">&quot;commonjs&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;moduleResolution&quot;</span><span class="token operator">:</span> <span class="token string">&quot;node&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;experimentalDecorators&quot;</span><span class="token operator">:</span><span class="token boolean">true</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;emitDecoratorMetadata&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;sourceMap&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;declaration&quot;</span><span class="token operator">:</span> <span class="token boolean">false</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;exclude&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+    <span class="token string">&quot;node_modules&quot;</span>
+  <span class="token punctuation">]</span>
+<span class="token punctuation">}</span>
+</code></pre></div><blockquote><p><strong>Note</strong> : target must be set to ES2015/ES6 (or more).</p></blockquote> <h3 id="optional"><a href="#optional" aria-hidden="true" class="header-anchor">#</a> Optional</h3> <p>You can copy this example of package.json to develop your application:</p> <div class="language-json extra-class"><pre class="language-json"><code><span class="token punctuation">{</span>
+  <span class="token property">&quot;name&quot;</span><span class="token operator">:</span> <span class="token string">&quot;test-ts-express-decorator&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;version&quot;</span><span class="token operator">:</span> <span class="token string">&quot;1.0.0&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;description&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;main&quot;</span><span class="token operator">:</span> <span class="token string">&quot;index.js&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;scripts&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token property">&quot;build&quot;</span><span class="token operator">:</span> <span class="token string">&quot;npm run tsc&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;coverage&quot;</span><span class="token operator">:</span> <span class="token string">&quot;npm run test-cov &amp;&amp; npm run test-remap&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;postinstall&quot;</span><span class="token operator">:</span> <span class="token string">&quot;npm run build&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;tslint&quot;</span><span class="token operator">:</span> <span class="token string">&quot;tslint ./*.ts ./lib/*.ts&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;test&quot;</span><span class="token operator">:</span> <span class="token string">&quot;mocha --reporter spec --check-leaks --bail test/&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;tsc&quot;</span><span class="token operator">:</span> <span class="token string">&quot;tsc --project tsconfig.json&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;tsc:w&quot;</span><span class="token operator">:</span> <span class="token string">&quot;tsc -w&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;start&quot;</span><span class="token operator">:</span> <span class="token string">&quot;nodemon --watch '**/*.ts' --ignore 'node_modules/**/*' --exec ts-node app.ts&quot;</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;author&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;license&quot;</span><span class="token operator">:</span> <span class="token string">&quot;ISC&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;dependencies&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token property">&quot;@tsed/core&quot;</span><span class="token operator">:</span> <span class="token string">&quot;4.0.0&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;@tsed/common&quot;</span><span class="token operator">:</span> <span class="token string">&quot;4.0.0&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;body-parser&quot;</span><span class="token operator">:</span> <span class="token string">&quot;^1.15.2&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;compression&quot;</span><span class="token operator">:</span> <span class="token string">&quot;^1.6.2&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;cookie-parser&quot;</span><span class="token operator">:</span> <span class="token string">&quot;^1.4.3&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;express&quot;</span><span class="token operator">:</span> <span class="token string">&quot;^4.14.0&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;method-override&quot;</span><span class="token operator">:</span> <span class="token string">&quot;^2.3.6&quot;</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;devDependencies&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token property">&quot;@types/express&quot;</span><span class="token operator">:</span> <span class="token string">&quot;^4.0.37&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;ts-node&quot;</span><span class="token operator">:</span> <span class="token string">&quot;^3.3.0&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;nodemon&quot;</span><span class="token operator">:</span> <span class="token string">&quot;^1.11.0&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;typescript&quot;</span><span class="token operator">:</span> <span class="token string">&quot;^2.4.3&quot;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><blockquote><p>Then use the command <code>npm install &amp;&amp; npm start</code> to start your server.</p></blockquote> <h2 id="quick-start"><a href="#quick-start" aria-hidden="true" class="header-anchor">#</a> Quick start</h2> <h3 id="create-your-express-server"><a href="#create-your-express-server" aria-hidden="true" class="header-anchor">#</a> Create your express server</h3> <p>Ts.ED provide a <code>ServerLoader</code> class to configure your
+Express application quickly. Just create a <code>server.ts</code> in your root project, declare
+a new <code>Server</code> class that extends <a href="/docs/server-loader.html"><code>ServerLoader</code></a>.</p> <h4 id="with-decorators"><a href="#with-decorators" aria-hidden="true" class="header-anchor">#</a> With decorators</h4> <div class="language-typescript extra-class"><pre class="language-typescript"><code><span class="token keyword">import</span> <span class="token punctuation">{</span>ServerLoader<span class="token punctuation">,</span> ServerSettings<span class="token punctuation">,</span> GlobalAcceptMimesMiddleware<span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">&quot;@tsed/common&quot;</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> Path <span class="token operator">=</span> <span class="token keyword">require</span><span class="token punctuation">(</span><span class="token string">&quot;path&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+@<span class="token function">ServerSettings</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+    rootDir<span class="token punctuation">:</span> Path<span class="token punctuation">.</span><span class="token function">resolve</span><span class="token punctuation">(</span>__dirname<span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token comment">// optional. By default it's equal to process.cwd()</span>
+    acceptMimes<span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token string">&quot;application/json&quot;</span><span class="token punctuation">]</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+<span class="token keyword">export</span> <span class="token keyword">class</span> <span class="token class-name">Server</span> <span class="token keyword">extends</span> <span class="token class-name">ServerLoader</span> <span class="token punctuation">{</span>
+
+    <span class="token comment">/**
+     * This method let you configure the middleware required by your application to works.
+     * @returns {Server}
+     */</span>
+    <span class="token keyword">public</span> <span class="token function">$onMountingMiddlewares</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">:</span> <span class="token keyword">void</span><span class="token operator">|</span>Promise<span class="token operator">&lt;</span><span class="token builtin">any</span><span class="token operator">&gt;</span> <span class="token punctuation">{</span>
+    
+        <span class="token keyword">const</span> cookieParser <span class="token operator">=</span> <span class="token keyword">require</span><span class="token punctuation">(</span><span class="token string">'cookie-parser'</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+            bodyParser <span class="token operator">=</span> <span class="token keyword">require</span><span class="token punctuation">(</span><span class="token string">'body-parser'</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+            compress <span class="token operator">=</span> <span class="token keyword">require</span><span class="token punctuation">(</span><span class="token string">'compression'</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+            methodOverride <span class="token operator">=</span> <span class="token keyword">require</span><span class="token punctuation">(</span><span class="token string">'method-override'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+        <span class="token keyword">this</span>
+            <span class="token punctuation">.</span><span class="token function">use</span><span class="token punctuation">(</span>GlobalAcceptMimesMiddleware<span class="token punctuation">)</span>
+            <span class="token punctuation">.</span><span class="token function">use</span><span class="token punctuation">(</span><span class="token function">cookieParser</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+            <span class="token punctuation">.</span><span class="token function">use</span><span class="token punctuation">(</span><span class="token function">compress</span><span class="token punctuation">(</span><span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+            <span class="token punctuation">.</span><span class="token function">use</span><span class="token punctuation">(</span><span class="token function">methodOverride</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+            <span class="token punctuation">.</span><span class="token function">use</span><span class="token punctuation">(</span>bodyParser<span class="token punctuation">.</span><span class="token function">json</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+            <span class="token punctuation">.</span><span class="token function">use</span><span class="token punctuation">(</span>bodyParser<span class="token punctuation">.</span><span class="token function">urlencoded</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+                extended<span class="token punctuation">:</span> <span class="token boolean">true</span>
+            <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+        <span class="token keyword">return</span> <span class="token keyword">null</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token keyword">public</span> <span class="token function">$onReady</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+        <span class="token builtin">console</span><span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'Server started...'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+   
+    <span class="token keyword">public</span> <span class="token function">$onServerInitError</span><span class="token punctuation">(</span>err<span class="token punctuation">)</span><span class="token punctuation">{</span>
+        <span class="token builtin">console</span><span class="token punctuation">.</span><span class="token function">error</span><span class="token punctuation">(</span>err<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">new</span> <span class="token class-name">Server</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">start</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><blockquote><p>By default ServerLoader load controllers in <code>${rootDir}/controllers</code> and mount it to <code>/rest</code> endpoint.</p></blockquote> <p>To customize the server settings see <a href="/configuration.html">Configuration</a> page.</p> <h4 id="with-the-methods"><a href="#with-the-methods" aria-hidden="true" class="header-anchor">#</a> With the methods</h4> <div class="language-typescript extra-class"><pre class="language-typescript"><code><span class="token keyword">import</span> <span class="token punctuation">{</span>ServerLoader<span class="token punctuation">,</span> GlobalAcceptMimesMiddleware<span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">&quot;@tsed/common&quot;</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> <span class="token operator">*</span> <span class="token keyword">as</span> Path <span class="token keyword">from</span> <span class="token string">&quot;path&quot;</span><span class="token punctuation">;</span>
+
+<span class="token keyword">export</span> <span class="token keyword">class</span> <span class="token class-name">Server</span> <span class="token keyword">extends</span> <span class="token class-name">ServerLoader</span> <span class="token punctuation">{</span>
+    <span class="token comment">/**
+     * In your constructor set the global endpoint and configure the folder to scan the controllers.
+     * You can start the http and https server.
+     */</span>
+    <span class="token keyword">constructor</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">super</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+        <span class="token keyword">const</span> appPath<span class="token punctuation">:</span> <span class="token builtin">string</span> <span class="token operator">=</span> Path<span class="token punctuation">.</span><span class="token function">resolve</span><span class="token punctuation">(</span>__dirname<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        
+        <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">mount</span><span class="token punctuation">(</span><span class="token string">&quot;/rest&quot;</span><span class="token punctuation">,</span> appPath <span class="token operator">+</span> <span class="token string">&quot;/controllers/**/**.js&quot;</span><span class="token punctuation">)</span>    <span class="token comment">// Declare the directory that contains your controllers</span>
+            <span class="token punctuation">.</span><span class="token function">createHttpServer</span><span class="token punctuation">(</span><span class="token number">8000</span><span class="token punctuation">)</span>
+            <span class="token punctuation">.</span><span class="token function">createHttpsServer</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+                port<span class="token punctuation">:</span> <span class="token number">8080</span>
+            <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token punctuation">}</span>
+
+    <span class="token comment">/**
+     * This method let you configure the middleware required by your application to works.
+     * @returns {Server}
+     */</span>
+    <span class="token function">$onMountingMiddlewares</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">:</span> <span class="token keyword">void</span><span class="token operator">|</span>Promise<span class="token operator">&lt;</span><span class="token builtin">any</span><span class="token operator">&gt;</span> <span class="token punctuation">{</span>
+    
+        <span class="token keyword">const</span> morgan <span class="token operator">=</span> <span class="token keyword">require</span><span class="token punctuation">(</span><span class="token string">'morgan'</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+            cookieParser <span class="token operator">=</span> <span class="token keyword">require</span><span class="token punctuation">(</span><span class="token string">'cookie-parser'</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+            bodyParser <span class="token operator">=</span> <span class="token keyword">require</span><span class="token punctuation">(</span><span class="token string">'body-parser'</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+            compress <span class="token operator">=</span> <span class="token keyword">require</span><span class="token punctuation">(</span><span class="token string">'compression'</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+            methodOverride <span class="token operator">=</span> <span class="token keyword">require</span><span class="token punctuation">(</span><span class="token string">'method-override'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+        <span class="token keyword">this</span>
+            <span class="token punctuation">.</span><span class="token function">use</span><span class="token punctuation">(</span><span class="token function">morgan</span><span class="token punctuation">(</span><span class="token string">'dev'</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+            <span class="token punctuation">.</span><span class="token function">use</span><span class="token punctuation">(</span>GlobalAcceptMimesMiddleware<span class="token punctuation">)</span>
+
+            <span class="token punctuation">.</span><span class="token function">use</span><span class="token punctuation">(</span><span class="token function">cookieParser</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+            <span class="token punctuation">.</span><span class="token function">use</span><span class="token punctuation">(</span><span class="token function">compress</span><span class="token punctuation">(</span><span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+            <span class="token punctuation">.</span><span class="token function">use</span><span class="token punctuation">(</span><span class="token function">methodOverride</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+            <span class="token punctuation">.</span><span class="token function">use</span><span class="token punctuation">(</span>bodyParser<span class="token punctuation">.</span><span class="token function">json</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+            <span class="token punctuation">.</span><span class="token function">use</span><span class="token punctuation">(</span>bodyParser<span class="token punctuation">.</span><span class="token function">urlencoded</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+                extended<span class="token punctuation">:</span> <span class="token boolean">true</span>
+            <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+        <span class="token keyword">return</span> <span class="token keyword">null</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token keyword">public</span> <span class="token function">$onReady</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+        <span class="token builtin">console</span><span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'Server started...'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+   
+    <span class="token keyword">public</span> <span class="token function">$onServerInitError</span><span class="token punctuation">(</span>err<span class="token punctuation">)</span><span class="token punctuation">{</span>
+        <span class="token builtin">console</span><span class="token punctuation">.</span><span class="token function">error</span><span class="token punctuation">(</span>err<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">new</span> <span class="token class-name">Server</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">start</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><h2 id="create-your-first-controller"><a href="#create-your-first-controller" aria-hidden="true" class="header-anchor">#</a> Create your first controller</h2> <p>Create a new <code>CalendarCtrl.ts</code> in your controllers directory (by default <code>root/controllers</code>).
+All controllers declared with <code>@Controller</code> decorators is considered as an Express router.
+An Express router require a path (here, the path is <code>/calendars</code>) to expose an url on your server.
+More precisely, it's a part of path, and entire exposed url depend on the Server configuration (see <a href="/configuration.html">Configuration</a>)
+and the <a href="/docs/controllers.html">controllers dependencies</a>.</p> <p>In this case, we haven't a dependencies and the root endpoint is set to <code>/rest</code>.
+So the controller's url will be <code>http://host/rest/calendars</code>.</p> <div class="language-typescript extra-class"><pre class="language-typescript"><code><span class="token keyword">import</span> <span class="token punctuation">{</span>
+    Controller<span class="token punctuation">,</span> Get<span class="token punctuation">,</span> Render<span class="token punctuation">,</span> Post<span class="token punctuation">,</span> 
+    Authenticated<span class="token punctuation">,</span> Required<span class="token punctuation">,</span> BodyParams<span class="token punctuation">,</span>
+    Delete
+<span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">&quot;@tsed/common&quot;</span><span class="token punctuation">;</span>
+
+<span class="token keyword">export</span> <span class="token keyword">interface</span> <span class="token class-name">Calendar</span><span class="token punctuation">{</span>
+    id<span class="token punctuation">:</span> <span class="token builtin">string</span><span class="token punctuation">;</span>
+    name<span class="token punctuation">:</span> <span class="token builtin">string</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+@<span class="token function">Controller</span><span class="token punctuation">(</span><span class="token string">&quot;/calendars&quot;</span><span class="token punctuation">)</span>
+<span class="token keyword">export</span> <span class="token keyword">class</span> <span class="token class-name">CalendarCtrl</span> <span class="token punctuation">{</span>
+
+    @<span class="token function">Get</span><span class="token punctuation">(</span><span class="token string">&quot;/&quot;</span><span class="token punctuation">)</span>
+    @<span class="token function">Render</span><span class="token punctuation">(</span><span class="token string">&quot;calendars/index&quot;</span><span class="token punctuation">)</span>
+    <span class="token keyword">async</span> <span class="token function">renderCalendars</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">:</span> Promise<span class="token operator">&lt;</span><span class="token builtin">Array</span><span class="token operator">&lt;</span>Calendar<span class="token operator">&gt;&gt;</span> <span class="token punctuation">{</span>
+        <span class="token keyword">return</span> <span class="token punctuation">[</span><span class="token punctuation">{</span>id<span class="token punctuation">:</span> <span class="token string">'1'</span><span class="token punctuation">,</span> name<span class="token punctuation">:</span> <span class="token string">&quot;test&quot;</span><span class="token punctuation">}</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    
+    @<span class="token function">Post</span><span class="token punctuation">(</span><span class="token string">&quot;/&quot;</span><span class="token punctuation">)</span>
+    @<span class="token function">Authenticated</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+    <span class="token keyword">async</span> <span class="token function">post</span><span class="token punctuation">(</span>
+        @<span class="token function">Required</span><span class="token punctuation">(</span><span class="token punctuation">)</span> @<span class="token function">BodyParams</span><span class="token punctuation">(</span><span class="token string">&quot;calendar&quot;</span><span class="token punctuation">)</span> calendar<span class="token punctuation">:</span> Calendar
+    <span class="token punctuation">)</span><span class="token punctuation">:</span> Promise<span class="token operator">&lt;</span>Calendar<span class="token operator">&gt;</span> <span class="token punctuation">{</span>
+        <span class="token keyword">return</span> <span class="token keyword">new</span> <span class="token class-name">Promise</span><span class="token operator">&lt;</span>Calendar<span class="token operator">&gt;</span><span class="token punctuation">(</span><span class="token punctuation">(</span>resolve<span class="token punctuation">:</span> <span class="token builtin">Function</span><span class="token punctuation">,</span> reject<span class="token punctuation">:</span> <span class="token builtin">Function</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+            calendar<span class="token punctuation">.</span>id <span class="token operator">=</span> <span class="token string">&quot;1&quot;</span><span class="token punctuation">;</span>
+            <span class="token function">resolve</span><span class="token punctuation">(</span>calendar<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    
+    @<span class="token function">Delete</span><span class="token punctuation">(</span><span class="token string">&quot;/&quot;</span><span class="token punctuation">)</span>
+    @<span class="token function">Authenticated</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+    <span class="token keyword">async</span> <span class="token function">deleteItem</span><span class="token punctuation">(</span>
+        @<span class="token function">BodyParams</span><span class="token punctuation">(</span><span class="token string">&quot;calendar.id&quot;</span><span class="token punctuation">)</span> @<span class="token function">Required</span><span class="token punctuation">(</span><span class="token punctuation">)</span> id<span class="token punctuation">:</span> <span class="token builtin">string</span> 
+    <span class="token punctuation">)</span><span class="token punctuation">:</span> Promise<span class="token operator">&lt;</span>Calendar<span class="token operator">&gt;</span> <span class="token punctuation">{</span>
+        <span class="token keyword">return</span> <span class="token punctuation">{</span>id<span class="token punctuation">,</span> name<span class="token punctuation">:</span> <span class="token string">&quot;calendar&quot;</span><span class="token punctuation">}</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><div class="tip custom-block"><p class="custom-block-title">TIP</p> <p>Decorators <code>@Get</code>, <code>@Post</code>, <code>@Delete</code>, <code>@Put</code>, etc..., supports dynamic pathParams (see <code>/:id</code>) and <code>RegExp</code> like Express API.</p></div> <div class="warning custom-block"><p class="custom-block-title">WARNING</p> <p>You have to configure <a href="/tutorials/templating">engine rendering</a> if you want to use the decorator <code>@Render</code>.</p></div> <p>To test your method, just run your <code>server.ts</code> and send a HTTP request on <code>/rest/calendars/1</code>.</p> <h3 id="ready-for-more"><a href="#ready-for-more" aria-hidden="true" class="header-anchor">#</a> Ready for More?</h3> <p>We’ve briefly introduced the most basic features of Ts.ED - the rest of this guide will cover them and other advanced features with much finer details, so make sure to read through it all!</p></div> <div class="page-nav"><p class="inner"><!----> <span class="next"><a href="/configuration.html">
+          Configuration
+        </a>
+        →
+      </span></p></div> <section class="other-topics"><ul><h3 class="heading">
+          Other <br><b>topics</b></h3> <li><a href="/tutorials/passport.html">Passport.js</a></li><li><a href="/tutorials/typeorm.html">TypeORM</a></li><li><a href="/tutorials/mongoose.html">Mongoose</a></li><li><a href="/tutorials/socket-io.html">Socket.io</a></li><li><a href="/tutorials/swagger.html">Swagger</a></li><li><a href="/tutorials/ajv.html">AJV</a></li><li><a href="/tutorials/custom-validator.html">Custom validator</a></li><li><a href="/tutorials/multer.html">Multer</a></li><li><a href="/tutorials/serve-static-files.html">Serve static files</a></li><li><a href="/tutorials/templating.html">Templating</a></li><li><a href="/tutorials/throw-http-exceptions.html">Throw HTTP Exceptions</a></li><li><a href="/tutorials/not-found-page.html">Customize 404</a></li><li><a href="/tutorials/aws.html">AWS</a></li><li><a href="/docs/controllers.html">Controllers</a></li><li><a href="/docs/services.html">Services</a></li><li><a href="/docs/factory.html">Factory</a></li><li><a href="/docs/provider.html">Provider</a></li><li><a href="/docs/model.html">Model</a></li><li><a href="/docs/converters.html">Converters</a></li><li><a href="/docs/middlewares.html">Middlewares</a></li><li><a href="/docs/scope.html">Scope</a></li><li><a href="/docs/filters.html">Filters</a></li><li><a href="/docs/interceptors.html">Interceptors</a></li><li><a href="/docs/server-loader.html">ServerLoader</a></li><li><a href="/docs/testing.html">Testing</a></li> </ul></section></article></div></main> <footer class="footer --with-sidebar"><div class="footer__improve-docs"><div class="container"><p>
+        Caught a mistake or want to contribute to the documentation?
+        <a href="https://github.com/romakita/ts-express-decorators/edit/master/docs/getting-started.md" target="_blank" rel="noopener noreferrer">Edit on Github</a></p></div></div> <div class="container--footer"><div class="container container--padded"><div class="footer__content"><div class="footer__next-step-header">
+          Contribute
+        </div> <p>
+          Help shape the future of Ts.Ed by joining our team and send us pull requests via our
+          <a href="https://github.com/romakita/ts-express-decorators">GitHub repository!</a></p> <div class="footer__next-step-header">
+          License
+        </div> <p>
+          Released under the <a href="#/license">MIT License</a> - © Copyright 2016 - 2018.
+        </p> <div class="github-stars"><iframe src="https://ghbtns.com/github-btn.html?user=romakita&amp;repo=ts-express-decorators&amp;type=watch&amp;count=true" allowtransparency="true" frameborder="0" scrolling="0" width="110" height="20"></iframe></div></div></div></div></footer> <!----></div></div>
+    <script src="/assets/js/30.dd85c693.js" defer></script><script src="/assets/js/app.75f5c317.js" defer></script>
+  </body>
+</html>
